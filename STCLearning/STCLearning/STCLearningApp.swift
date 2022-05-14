@@ -11,7 +11,7 @@ import SwiftUI
 struct STCLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            RotationGestureBootcamp()
+            MainScreen()
         }
     }
 }
