@@ -30,6 +30,26 @@ struct MainScreen: View {
                 NavigationLink("Drag Gesture 2") {
                     DragGestureBootcamp2()
                 }
+                
+                NavigationLink("ScrollView Reader") {
+                    ScrollViewReaderBootcamp()
+                }
+                
+                NavigationLink("Geometry Reader") {
+                    GeometryReaderBootcamp()
+                }
+                
+                NavigationLink("Multiple Sheet") {
+                    MultipleSheetBootcamp()
+                }
+                
+                NavigationLink("Mask") {
+                    MaskBootcamp()
+                }
+                
+                NavigationLink("Sounds") {
+                    SoundsBootcamp()
+                }
             }
             .navigationTitle("STC Learning")
         }
