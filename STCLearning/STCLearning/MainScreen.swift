@@ -11,45 +11,64 @@ struct MainScreen: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("Long Press Gesture") {
-                    LongPressGestureBootcamp()
+                Section(header: Text("Gestures")) {
+                    
+                    NavigationLink("Long Press Gesture") {
+                        LongPressGestureBootcamp()
+                    }
+                    NavigationLink("Magnification Gesture") {
+                        MagnificationBootcamp()
+                    }
+                    NavigationLink("Rotation Gesture") {
+                        RotationGestureBootcamp()
+                    }
+                    
+                    NavigationLink("Drag Gesture") {
+                        DragGestureBootcamp()
+                    }
+                    
+                    NavigationLink("Drag Gesture 2") {
+                        DragGestureBootcamp2()
+                    }
                 }
                 
-                NavigationLink("Magnification Gesture") {
-                    MagnificationBootcamp()
+                Section(header: Text("UI")) {
+                    
+                    NavigationLink("ScrollView Reader") {
+                        ScrollViewReaderBootcamp()
+                    }
+                    
+                    NavigationLink("Geometry Reader") {
+                        GeometryReaderBootcamp()
+                    }
+                    
+                    NavigationLink("Multiple Sheet") {
+                        MultipleSheetBootcamp()
+                    }
+                    
+                    NavigationLink("Mask") {
+                        MaskBootcamp()
+                    }
                 }
                 
-                NavigationLink("Rotation Gesture") {
-                    RotationGestureBootcamp()
+                Section(header: Text("")) {
+                    
+                    NavigationLink("Sounds") {
+                        SoundsBootcamp()
+                    }
+                    
+                    NavigationLink("Haptic") {
+                        HapticsBootcamp()
+                    }
                 }
                 
-                NavigationLink("Drag Gesture") {
-                    DragGestureBootcamp()
+                Section(header: Text("Notifications")) {
+                    
+                    NavigationLink("Local Notification") {
+                        LocalNotificationBootcamp()
+                    }
                 }
-                
-                NavigationLink("Drag Gesture 2") {
-                    DragGestureBootcamp2()
-                }
-                
-                NavigationLink("ScrollView Reader") {
-                    ScrollViewReaderBootcamp()
-                }
-                
-                NavigationLink("Geometry Reader") {
-                    GeometryReaderBootcamp()
-                }
-                
-                NavigationLink("Multiple Sheet") {
-                    MultipleSheetBootcamp()
-                }
-                
-                NavigationLink("Mask") {
-                    MaskBootcamp()
-                }
-                
-                NavigationLink("Sounds") {
-                    SoundsBootcamp()
-                }
+               
             }
             .navigationTitle("STC Learning")
         }

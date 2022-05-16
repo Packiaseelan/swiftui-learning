@@ -24,6 +24,8 @@
 		E4AC9EF82832359900BEDA30 /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC9EF72832359900BEDA30 /* SoundsBootcamp.swift */; };
 		E4AC9EFB283256E700BEDA30 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4AC9EFA283256E700BEDA30 /* tada.mp3 */; };
 		E4AC9EFD283256F100BEDA30 /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4AC9EFC283256F100BEDA30 /* badum.mp3 */; };
+		E4AC9EFF28326B7000BEDA30 /* HapticsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC9EFE28326B7000BEDA30 /* HapticsBootcamp.swift */; };
+		E4AC9F01283275CB00BEDA30 /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC9F00283275CB00BEDA30 /* LocalNotificationBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		E4AC9EF72832359900BEDA30 /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
 		E4AC9EFA283256E700BEDA30 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		E4AC9EFC283256F100BEDA30 /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
+		E4AC9EFE28326B7000BEDA30 /* HapticsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsBootcamp.swift; sourceTree = "<group>"; };
+		E4AC9F00283275CB00BEDA30 /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				E4AC9EF32832078B00BEDA30 /* MultipleSheetBootcamp.swift */,
 				E4AC9EF5283220D400BEDA30 /* MaskBootcamp.swift */,
 				E4AC9EF72832359900BEDA30 /* SoundsBootcamp.swift */,
+				E4AC9EFE28326B7000BEDA30 /* HapticsBootcamp.swift */,
+				E4AC9F00283275CB00BEDA30 /* LocalNotificationBootcamp.swift */,
 				E4AC9EF9283256BE00BEDA30 /* Sounds */,
 				E4AC9EEB282FD25200BEDA30 /* MainScreen.swift */,
 				E4AC9ED9282E9C3000BEDA30 /* Assets.xcassets */,
@@ -187,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AC9EF02830D00300BEDA30 /* ScrollViewReaderBootcamp.swift in Sources */,
+				E4AC9EFF28326B7000BEDA30 /* HapticsBootcamp.swift in Sources */,
+				E4AC9F01283275CB00BEDA30 /* LocalNotificationBootcamp.swift in Sources */,
 				E4AC9EEA282FD0F900BEDA30 /* DragGestureBootcamp.swift in Sources */,
 				E4AC9EF42832078B00BEDA30 /* MultipleSheetBootcamp.swift in Sources */,
 				E4AC9EF82832359900BEDA30 /* SoundsBootcamp.swift in Sources */,
