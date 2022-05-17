@@ -30,24 +30,7 @@ class NotificationManager {
         content.sound = .default
         content.badge = 3
         
-        // time
-        let timeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
-        
-        // calendar
-        var dateComponents = DateComponents();
-        dateComponents.hour = 18
-        dateComponents.minute = 06
-        let calendarTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        
-        // location
-        let coordinates = CLLocationCoordinate2D(latitude: 40.0, longitude: 50.0)
-        let region = CLCircularRegion(center: coordinates, radius: 100, identifier: UUID().uuidString)
-        region.notifyOnEntry = true
-        region.notifyOnExit = false
-        let locationTrigger = UNLocationNotificationTrigger( region: region, repeats: false)
-        
-        
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: locationTrigger)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: getNotificationTrigger())
         
         UNUserNotificationCenter.current().add(request)
     }
@@ -55,6 +38,24 @@ class NotificationManager {
     func cancelNotification() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+    }
+    
+    func getNotificationTrigger() -> UNNotificationTrigger {
+        // Time Trigger
+        return UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+        
+        // Calendar Trigger
+//        var dateComponents = DateComponents();
+//        dateComponents.hour = 18
+//        dateComponents.minute = 06
+//        return UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        // Location Trigger
+//        let coordinates = CLLocationCoordinate2D(latitude: 40.0, longitude: 50.0)
+//        let region = CLCircularRegion(center: coordinates, radius: 100, identifier: UUID().uuidString)
+//        region.notifyOnEntry = true
+//        region.notifyOnExit = false
+//        return UNLocationNotificationTrigger( region: region, repeats: false)
     }
 }
 

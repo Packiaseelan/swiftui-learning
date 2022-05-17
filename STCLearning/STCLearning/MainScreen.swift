@@ -51,7 +51,7 @@ struct MainScreen: View {
                     }
                 }
                 
-                Section(header: Text("")) {
+                Section(header: Text("Sounds & Vibrations")) {
                     
                     NavigationLink("Sounds") {
                         SoundsBootcamp()
@@ -68,9 +68,20 @@ struct MainScreen: View {
                         LocalNotificationBootcamp()
                     }
                 }
+                
+                Section(header: Text("Logic")) { 
+                    
+                    NavigationLink("Hashable") {
+                        HashableBootcamp()
+                    }
+                    NavigationLink("Arrays") {
+                        ArraysBootcamp()
+                    }
+                }
                
             }
             .navigationTitle("STC Learning")
+            .navigationBarItems(leading: Text(""), trailing: Text(""))
         }
     }
 }
