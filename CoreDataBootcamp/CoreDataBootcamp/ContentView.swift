@@ -48,6 +48,9 @@ struct ContentView: View {
     }
 
     private func addItem() {
+        if fruitNameField.isEmpty {
+            return
+        }
         withAnimation {
             let fruit = FruitEntity(context: viewContext)
             fruit.name = fruitNameField
