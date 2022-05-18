@@ -77,6 +77,9 @@ struct MainScreen: View {
                     NavigationLink("Arrays") {
                         ArraysBootcamp()
                     }
+                    NavigationLink("Core Data") {
+                        CoreDataBootcamp()
+                    }
                 }
                
             }
