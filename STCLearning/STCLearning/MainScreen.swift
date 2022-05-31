@@ -81,6 +81,15 @@ struct MainScreen: View {
                         CoreDataBootcamp()
                     }
                 }
+                
+                Section(header: Text("Threads")) {
+                    NavigationLink("Background Threads") {
+                        BackgroundThreadBootcamp()
+                    }
+                    NavigationLink("Week Self") {
+                        WeekSelfBootcamp()
+                    }
+                }
                
             }
             .navigationTitle("STC Learning")

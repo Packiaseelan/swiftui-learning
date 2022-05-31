@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41717DE2844F99B00410B2D /* WeekSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41717DD2844F99B00410B2D /* WeekSelfBootcamp.swift */; };
 		E448B9DB2834BC5800EC7E40 /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448B9DA2834BC5800EC7E40 /* CoreDataBootcamp.swift */; };
 		E448B9DE2834BDA600EC7E40 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E448B9DC2834BDA600EC7E40 /* FruitsContainer.xcdatamodeld */; };
+		E49EB6AA283CA02B00C538C1 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EB6A9283CA02B00C538C1 /* BackgroundThreadBootcamp.swift */; };
 		E4AC9ED6282E9C2F00BEDA30 /* STCLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC9ED5282E9C2F00BEDA30 /* STCLearningApp.swift */; };
 		E4AC9ED8282E9C2F00BEDA30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC9ED7282E9C2F00BEDA30 /* ContentView.swift */; };
 		E4AC9EDA282E9C3000BEDA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AC9ED9282E9C3000BEDA30 /* Assets.xcassets */; };
@@ -33,8 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41717DD2844F99B00410B2D /* WeekSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSelfBootcamp.swift; sourceTree = "<group>"; };
 		E448B9DA2834BC5800EC7E40 /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		E448B9DD2834BDA600EC7E40 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		E49EB6A9283CA02B00C538C1 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 		E4AC9ED2282E9C2F00BEDA30 /* STCLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC9ED5282E9C2F00BEDA30 /* STCLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCLearningApp.swift; sourceTree = "<group>"; };
 		E4AC9ED7282E9C2F00BEDA30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				E4AC9F0428337C7300BEDA30 /* ArraysBootcamp.swift */,
 				E448B9DA2834BC5800EC7E40 /* CoreDataBootcamp.swift */,
 				E448B9DC2834BDA600EC7E40 /* FruitsContainer.xcdatamodeld */,
+				E49EB6A9283CA02B00C538C1 /* BackgroundThreadBootcamp.swift */,
+				E41717DD2844F99B00410B2D /* WeekSelfBootcamp.swift */,
 				E4AC9EF9283256BE00BEDA30 /* Sounds */,
 				E4AC9EEB282FD25200BEDA30 /* MainScreen.swift */,
 				E4AC9ED9282E9C3000BEDA30 /* Assets.xcassets */,
@@ -214,10 +220,12 @@
 				E4AC9EEC282FD25200BEDA30 /* MainScreen.swift in Sources */,
 				E4AC9EE6282F6F4F00BEDA30 /* MagnificationBootcamp.swift in Sources */,
 				E448B9DE2834BDA600EC7E40 /* FruitsContainer.xcdatamodeld in Sources */,
+				E41717DE2844F99B00410B2D /* WeekSelfBootcamp.swift in Sources */,
 				E4AC9ED8282E9C2F00BEDA30 /* ContentView.swift in Sources */,
 				E4AC9ED6282E9C2F00BEDA30 /* STCLearningApp.swift in Sources */,
 				E4AC9EE4282E9C8D00BEDA30 /* LongPressGestureBootcamp.swift in Sources */,
 				E4AC9EE8282FCE9400BEDA30 /* RotationGestureBootcamp.swift in Sources */,
+				E49EB6AA283CA02B00C538C1 /* BackgroundThreadBootcamp.swift in Sources */,
 				E448B9DB2834BC5800EC7E40 /* CoreDataBootcamp.swift in Sources */,
 				E4AC9F0528337C7300BEDA30 /* ArraysBootcamp.swift in Sources */,
 				E4AC9EF6283220D400BEDA30 /* MaskBootcamp.swift in Sources */,
