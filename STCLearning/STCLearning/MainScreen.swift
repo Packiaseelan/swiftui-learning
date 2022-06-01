@@ -90,6 +90,21 @@ struct MainScreen: View {
                         WeekSelfBootcamp()
                     }
                 }
+                
+                Section(header: Text("Closures")) {
+                    NavigationLink("Typealias") {
+                        TypealiasBootcamp()
+                    }
+                    NavigationLink("Escaping") {
+                        EscapingBootcamp()
+                    }
+                }
+                
+                Section(header: Text("Backend")) {
+                    NavigationLink("Codable") {
+                        CodableBootcamp()
+                    }
+                }
                
             }
             .navigationTitle("STC Learning")
