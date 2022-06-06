@@ -104,6 +104,15 @@ struct MainScreen: View {
                     NavigationLink("Codable") {
                         CodableBootcamp()
                     }
+                    NavigationLink("Download with escaping") {
+                        DownloadWithEscapingBootcamp()
+                    }
+                    NavigationLink("Download with combine") {
+                        DownloadWithCombine()
+                    }
+                    NavigationLink("Timer") {
+                        TimerBootcamp()
+                    }
                 }
                
             }
