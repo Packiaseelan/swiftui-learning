@@ -38,6 +38,8 @@
 		E4E2291B2848DD2900D677FD /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E2291A2848DD2900D677FD /* DownloadWithEscapingBootcamp.swift */; };
 		E4E2291D2849D03E00D677FD /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E2291C2849D03E00D677FD /* DownloadWithCombine.swift */; };
 		E4E2291F284D0FCE00D677FD /* TimerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E2291E284D0FCE00D677FD /* TimerBootcamp.swift */; };
+		E4E22921284E206C00D677FD /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E22920284E206C00D677FD /* SubscriberBootcamp.swift */; };
+		E4E22923284E49EC00D677FD /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E22922284E49EC00D677FD /* FileManagerBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		E4E2291A2848DD2900D677FD /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		E4E2291C2849D03E00D677FD /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		E4E2291E284D0FCE00D677FD /* TimerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBootcamp.swift; sourceTree = "<group>"; };
+		E4E22920284E206C00D677FD /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
+		E4E22922284E49EC00D677FD /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				E4AC9EF32832078B00BEDA30 /* MultipleSheetBootcamp.swift */,
 				E4AC9EF5283220D400BEDA30 /* MaskBootcamp.swift */,
 				E4AC9EF72832359900BEDA30 /* SoundsBootcamp.swift */,
+				E4AC9EF9283256BE00BEDA30 /* Sounds */,
 				E4AC9EFE28326B7000BEDA30 /* HapticsBootcamp.swift */,
 				E4AC9F00283275CB00BEDA30 /* LocalNotificationBootcamp.swift */,
 				E4AC9F0228336FFD00BEDA30 /* HashableBootcamp.swift */,
@@ -131,7 +136,8 @@
 				E4E2291A2848DD2900D677FD /* DownloadWithEscapingBootcamp.swift */,
 				E4E2291C2849D03E00D677FD /* DownloadWithCombine.swift */,
 				E4E2291E284D0FCE00D677FD /* TimerBootcamp.swift */,
-				E4AC9EF9283256BE00BEDA30 /* Sounds */,
+				E4E22920284E206C00D677FD /* SubscriberBootcamp.swift */,
+				E4E22922284E49EC00D677FD /* FileManagerBootcamp.swift */,
 				E4AC9EEB282FD25200BEDA30 /* MainScreen.swift */,
 				E4AC9ED9282E9C3000BEDA30 /* Assets.xcassets */,
 				E4AC9EDB282E9C3000BEDA30 /* Preview Content */,
@@ -230,6 +236,7 @@
 			files = (
 				E4AC9EF02830D00300BEDA30 /* ScrollViewReaderBootcamp.swift in Sources */,
 				E4AC9EFF28326B7000BEDA30 /* HapticsBootcamp.swift in Sources */,
+				E4E22923284E49EC00D677FD /* FileManagerBootcamp.swift in Sources */,
 				E4AC9F01283275CB00BEDA30 /* LocalNotificationBootcamp.swift in Sources */,
 				E4E2291B2848DD2900D677FD /* DownloadWithEscapingBootcamp.swift in Sources */,
 				E4AC9EEA282FD0F900BEDA30 /* DragGestureBootcamp.swift in Sources */,
@@ -244,6 +251,7 @@
 				E4AC9ED8282E9C2F00BEDA30 /* ContentView.swift in Sources */,
 				E4AC9ED6282E9C2F00BEDA30 /* STCLearningApp.swift in Sources */,
 				E4AC9EE4282E9C8D00BEDA30 /* LongPressGestureBootcamp.swift in Sources */,
+				E4E22921284E206C00D677FD /* SubscriberBootcamp.swift in Sources */,
 				E4AC9EE8282FCE9400BEDA30 /* RotationGestureBootcamp.swift in Sources */,
 				E49EB6AA283CA02B00C538C1 /* BackgroundThreadBootcamp.swift in Sources */,
 				E448B9DB2834BC5800EC7E40 /* CoreDataBootcamp.swift in Sources */,

@@ -110,8 +110,20 @@ struct MainScreen: View {
                     NavigationLink("Download with combine") {
                         DownloadWithCombine()
                     }
+                }
+                
+                Section(header: Text("Publisher Subscriber")) {
                     NavigationLink("Timer") {
                         TimerBootcamp()
+                    }
+                    NavigationLink("Subscriber") {
+                        SubscriberBootcamp()
+                    }
+                }
+                
+                Section(header: Text("Save Data")) {
+                    NavigationLink("File Manager") {
+                        FileManagerBootcamp()
                     }
                 }
                
