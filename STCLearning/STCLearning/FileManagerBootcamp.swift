@@ -9,20 +9,63 @@ import SwiftUI
 
 class LocalFileManager {
     static var instance: LocalFileManager = LocalFileManager()
+    let folderName = "MyApp_Images"
     
-    func saveImage(image: UIImage, name: String) {
+    init() {
+        createFolder()
+    }
+    
+    func createFolder() {
         guard
-            let data = image.jpegData(compressionQuality: 1),
-            let path = getImagePath(name: name) else {
-            print("Error getting data.")
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent(folderName)
+                .path else {
+            return
+        }
+        
+        if !FileManager.default.fileExists(atPath: path) {
+            do {
+                try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories:  true)
+                print("Success creating  folder")
+            } catch let error {
+                print("Error creating folder. \(error)")
+            }
+        }
+    }
+    
+    func deleteFolder() {
+        guard
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent(folderName)
+                .path else {
             return
         }
         
         do {
-            try data.write(to: path)
-            print("Success saving!")
+            try FileManager.default.removeItem(atPath: path)
         } catch let error {
-            print("Error saving image. \(error)")
+            print("Error deleting folder. \(error)")
+        }
+    }
+    
+    func saveImage(image: UIImage, name: String) -> String {
+        guard
+            let data = image.jpegData(compressionQuality: 1),
+            let path = getImagePath(name: name) else {
+            return "Error getting data."
+        }
+        
+        do {
+            try data.write(to: path)
+            return "Success saving!"
+        } catch let error {
+            return "Error saving image. \(error)"
         }
     }
     
@@ -37,19 +80,18 @@ class LocalFileManager {
         return UIImage(contentsOfFile: path)
     }
     
-    func deleteImage(name: String) {
+    func deleteImage(name: String) -> String {
         guard
             let path = getImagePath(name: name),
             FileManager.default.fileExists(atPath: path.path) else {
-            print("Error getting path.")
-            return
+            return "Error getting path."
         }
         
         do {
             try FileManager.default.removeItem(at: path)
-            print("Success deleting!")
+            return "Success deleting!"
         } catch let error {
-            print("Error deleting file. \(error)")
+            return "Error deleting file. \(error)"
         }
     }
     
@@ -72,6 +114,7 @@ class FileManagerViewModel: ObservableObject {
     @Published var image: UIImage?
     let manager = LocalFileManager.instance
     let imageName: String = "steve-jobs"
+    @Published var infomessage: String = ""
     
     init() {
         getImageFromAssetsFolder()
@@ -87,12 +130,13 @@ class FileManagerViewModel: ObservableObject {
     }
     
     func deleteImage() {
-        manager.deleteImage(name: imageName)
+        infomessage = manager.deleteImage(name: imageName)
+        manager.deleteFolder()
     }
     
     func saveImage() {
         guard let image = image else { return }
-        manager.saveImage(image: image, name: imageName)
+        infomessage = manager.saveImage(image: image, name: imageName)
     }
 }
 
@@ -122,6 +166,11 @@ struct FileManagerBootcamp: View {
                 .accentColor(.red)
                 .buttonStyle(.borderedProminent)
             }
+            
+            Text(vm.infomessage)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(.purple)
             
             
             Spacer()
