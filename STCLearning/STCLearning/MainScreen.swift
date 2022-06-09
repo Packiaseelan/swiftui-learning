@@ -121,9 +121,15 @@ struct MainScreen: View {
                     }
                 }
                 
-                Section(header: Text("Save Data")) {
+                Section(header: Text("File Management")) {
                     NavigationLink("File Manager") {
                         FileManagerBootcamp()
+                    }
+                    NavigationLink("Cache") {
+                        CacheBootcamp()
+                    }
+                    NavigationLink("Download Image") {
+                        DownloadingImagesBootcamp()
                     }
                 }
                
