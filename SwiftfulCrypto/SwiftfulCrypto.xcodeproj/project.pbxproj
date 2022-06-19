@@ -11,6 +11,8 @@
 		E472C591285D95B600A54CE0 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */; };
 		E472C593285D95E300A54CE0 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C592285D95E300A54CE0 /* CoinImageService.swift */; };
 		E472C595285DC79600A54CE0 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C594285DC79600A54CE0 /* LocalFileManager.swift */; };
+		E472C597285E3BBD00A54CE0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C596285E3BBD00A54CE0 /* SearchBarView.swift */; };
+		E472C599285E408600A54CE0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C598285E408600A54CE0 /* UIApplication.swift */; };
 		E476ED3F285B48E000C29023 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E476ED3E285B48E000C29023 /* HomeViewModel.swift */; };
 		E476ED41285B519200C29023 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E476ED40285B519200C29023 /* CoinListView.swift */; };
 		E476ED44285B569A00C29023 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E476ED43285B569A00C29023 /* CoinDataService.swift */; };
@@ -34,6 +36,8 @@
 		E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		E472C592285D95E300A54CE0 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		E472C594285DC79600A54CE0 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		E472C596285E3BBD00A54CE0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E472C598285E408600A54CE0 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		E476ED3E285B48E000C29023 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E476ED40285B519200C29023 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		E476ED43285B569A00C29023 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				E4FF96A928531F4F00098F91 /* Double.swift */,
 				E4FF96A528531A5E00098F91 /* PreviewProvider.swift */,
 				E4FF96922853048200098F91 /* Color.swift */,
+				E472C598285E408600A54CE0 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				E472C58D285D937200A54CE0 /* CoinImage */,
 				E4FF969B28530B1600098F91 /* CircleButton */,
+				E472C596285E3BBD00A54CE0 /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -281,10 +287,12 @@
 				E476ED44285B569A00C29023 /* CoinDataService.swift in Sources */,
 				E476ED41285B519200C29023 /* CoinListView.swift in Sources */,
 				E472C593285D95E300A54CE0 /* CoinImageService.swift in Sources */,
+				E472C599285E408600A54CE0 /* UIApplication.swift in Sources */,
 				E4FF969D28530B2300098F91 /* CircleButtonView.swift in Sources */,
 				E4FF96A42853167400098F91 /* CoinModel.swift in Sources */,
 				E4FF96A628531A5E00098F91 /* PreviewProvider.swift in Sources */,
 				E472C595285DC79600A54CE0 /* LocalFileManager.swift in Sources */,
+				E472C597285E3BBD00A54CE0 /* SearchBarView.swift in Sources */,
 				E4FF96932853048200098F91 /* Color.swift in Sources */,
 				E472C591285D95B600A54CE0 /* CoinImageViewModel.swift in Sources */,
 				E472C58F285D938100A54CE0 /* CoinImageView.swift in Sources */,
