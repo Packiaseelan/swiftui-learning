@@ -93,6 +93,11 @@ extension HomeView {
             }
             Text("Price")
                 .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            
+            Button(action: onReload) {
+                Image(systemName: "goforward")
+            }
+            .rotationEffect(Angle(degrees: vm.isLoading ? 360 : 0))
         }
         .padding(.horizontal)
         .font(.caption)
@@ -112,6 +117,12 @@ extension HomeView {
     private func onLeftButtonClicked() {
         if showPortfolio {
             showPortfolioView.toggle()
+        }
+    }
+    
+    private func onReload() {
+        withAnimation(.linear(duration: 2)) {
+            vm.reloadData()
         }
     }
     
