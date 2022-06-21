@@ -40,7 +40,7 @@ struct HomeView: View {
                         .transition(.move(edge: .trailing))
                 }
                 
-                Spacer()
+                Spacer(minLength: 0)
             }
         }
     }
@@ -86,12 +86,24 @@ extension HomeView {
     
     private var columnTitle: some View {
         HStack {
-            Text("Coin")
+            TitleView(title: "Coin", imageName: "chevron.down",
+                      opacity: vm.sortOption == .rank || vm.sortOption == .rankReversed ? 1 : 0,
+                      rotation: vm.sortOption == .rank ? 0 : 180)
+                .onTapGesture(perform: onCoinSort)
+            
             Spacer()
+            
             if showPortfolio {
-                Text("Holdings")
+                TitleView(title: "Holdings", imageName: "chevron.down",
+                          opacity: vm.sortOption == .holdings || vm.sortOption == .holdiingsReversed ? 1 : 0,
+                          rotation: vm.sortOption == .holdings ? 0 : 180)
+                    .onTapGesture(perform: onHoldingsSort)
             }
-            Text("Price")
+            
+            TitleView(title: "Price", imageName: "chevron.down",
+                      opacity: vm.sortOption == .price || vm.sortOption == .priceReversed ? 1 : 0,
+                      rotation: vm.sortOption == .price ? 0 : 180)
+                .onTapGesture(perform: onPriceSort)
                 .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
             
             Button(action: onReload) {
@@ -126,4 +138,38 @@ extension HomeView {
         }
     }
     
+    private func onCoinSort() {
+        withAnimation(.default) {
+            vm.sortOption = vm.sortOption == .rank ? .rankReversed : .rank
+        }
+    }
+    
+    private func onHoldingsSort() {
+        withAnimation(.default) {
+            vm.sortOption = vm.sortOption == .holdings ? .holdiingsReversed : .holdings
+        }
+    }
+    
+    private func onPriceSort() {
+        withAnimation(.default) {
+            vm.sortOption = vm.sortOption == .price ? .priceReversed : .price
+        }
+    }
+    
+}
+
+struct TitleView: View {
+    let title: String
+    let imageName: String
+    let opacity: Double
+    let rotation: Double
+    
+    var body: some View {
+        HStack(spacing: 4) {
+            Text(title)
+            Image(systemName: imageName)
+                .opacity(opacity)
+                .rotationEffect(Angle(degrees: rotation))
+        }
+    }
 }
