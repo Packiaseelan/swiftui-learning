@@ -5,9 +5,7 @@
 //  Created by Packiaseelan S on 20/06/22.
 //
 
-import Foundation
 import CoreData
-import UIKit
 
 class PortfolioDataService {
     
