@@ -11,12 +11,17 @@ struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     @State var showPortfolio: Bool = false
+    @State var showPortfolioView: Bool = false
     
     var body: some View {
         ZStack {
             // background layer
             Color.theme.background
                 .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolioView, content: {
+                    PortfolioView()
+                        .environmentObject(vm)
+                })
             
             // Content
             VStack {
@@ -59,6 +64,7 @@ extension HomeView {
                 .background(
                     CircleButtonAnimationView(animate: $showPortfolio)
                 )
+                .onTapGesture(perform: onLeftButtonClicked)
                 .animation(.none, value: showPortfolio)
             
             Spacer()
@@ -73,11 +79,7 @@ extension HomeView {
             
             CircleButtonView(iconName: "chevron.right")
                 .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
-                .onTapGesture {
-                    withAnimation(.spring()) {
-                        showPortfolio.toggle()
-                    }
-                }
+                .onTapGesture(perform: onRightButtonClicked)
         }
         .padding(.horizontal)
     }
@@ -96,4 +98,21 @@ extension HomeView {
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
     }
+}
+
+// HomeView actions
+extension HomeView {
+    
+    private func onRightButtonClicked() {
+        withAnimation(.spring()) {
+            showPortfolio.toggle()
+        }
+    }
+    
+    private func onLeftButtonClicked() {
+        if showPortfolio {
+            showPortfolioView.toggle()
+        }
+    }
+    
 }
