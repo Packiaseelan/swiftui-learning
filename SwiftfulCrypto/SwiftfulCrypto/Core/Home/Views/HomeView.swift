@@ -13,6 +13,9 @@ struct HomeView: View {
     @State var showPortfolio: Bool = false
     @State var showPortfolioView: Bool = false
     
+    @State var selectedCoin: CoinModel? = nil
+    @State var showDetailView: Bool = false
+    
     var body: some View {
         ZStack {
             // background layer
@@ -31,18 +34,39 @@ struct HomeView: View {
                 columnTitle
                 
                 if !showPortfolio {
-                    CoinListView(coins: vm.allCoins, showHoldings: false)
-                        .transition(.move(edge: .leading))
+                    List {
+                        ForEach(vm.allCoins) { coin in
+                            CoinRowView(coin: coin, showHoldingColumn: false)
+                                .onTapGesture { navigateToDetail(coin: coin) }
+                                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                        }
+                    }
+                    .listStyle(PlainListStyle())
+                    .transition(.move(edge: .leading))
                 }
                 
                 if showPortfolio {
-                    CoinListView(coins: vm.portfolioCoins, showHoldings: true)
-                        .transition(.move(edge: .trailing))
+                    List {
+                        ForEach(vm.portfolioCoins) { coin in
+                            CoinRowView(coin: coin, showHoldingColumn: true)
+                                .onTapGesture { navigateToDetail(coin: coin) }
+                                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                        }
+                    }
+                    .listStyle(PlainListStyle())
+                    .transition(.move(edge: .trailing))
                 }
                 
                 Spacer(minLength: 0)
             }
         }
+        .background(
+            NavigationLink(
+                destination: DetailLoadingView(coin: $selectedCoin),
+                isActive: $showDetailView,
+                label: { EmptyView() }
+            )
+        )
     }
 }
 
@@ -95,7 +119,7 @@ extension HomeView {
             
             if showPortfolio {
                 TitleView(title: "Holdings", imageName: "chevron.down",
-                          opacity: vm.sortOption == .holdings || vm.sortOption == .holdiingsReversed ? 1 : 0,
+                          opacity: vm.sortOption == .holdings || vm.sortOption == .holdingsReversed ? 1 : 0,
                           rotation: vm.sortOption == .holdings ? 0 : 180)
                     .onTapGesture(perform: onHoldingsSort)
             }
@@ -146,7 +170,7 @@ extension HomeView {
     
     private func onHoldingsSort() {
         withAnimation(.default) {
-            vm.sortOption = vm.sortOption == .holdings ? .holdiingsReversed : .holdings
+            vm.sortOption = vm.sortOption == .holdings ? .holdingsReversed : .holdings
         }
     }
     
@@ -154,6 +178,11 @@ extension HomeView {
         withAnimation(.default) {
             vm.sortOption = vm.sortOption == .price ? .priceReversed : .price
         }
+    }
+    
+    private func navigateToDetail(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
     }
     
 }

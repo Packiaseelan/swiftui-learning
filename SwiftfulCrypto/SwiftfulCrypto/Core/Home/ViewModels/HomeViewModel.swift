@@ -23,7 +23,7 @@ class HomeViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     enum SortingOptions {
-        case rank, rankReversed, holdings, holdiingsReversed, price, priceReversed
+        case rank, rankReversed, holdings, holdingsReversed, price, priceReversed
     }
     
     init() {
@@ -85,7 +85,7 @@ class HomeViewModel: ObservableObject {
         switch sort {
         case .rank, .holdings:
             coins.sort(by: { $0.rank > $1.rank})
-        case .rankReversed, .holdiingsReversed:
+        case .rankReversed, .holdingsReversed:
             coins.sort(by: { $0.rank < $1.rank})
         case .price:
             coins.sort(by: { $0.currentPrice > $1.currentPrice})
@@ -99,7 +99,7 @@ class HomeViewModel: ObservableObject {
         case .holdings:
             return coins.sorted(by: { $0.currentHoldingsValue > $1.currentHoldingsValue})
             
-        case .holdiingsReversed:
+        case .holdingsReversed:
             return coins.sorted(by: { $0.currentHoldingsValue < $1.currentHoldingsValue})
             
         default:
