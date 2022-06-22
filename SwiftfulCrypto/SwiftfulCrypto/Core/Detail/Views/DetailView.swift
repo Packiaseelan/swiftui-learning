@@ -37,21 +37,18 @@ struct DetailView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                Text("")
-                    .frame(height: 150)
-                
-                overrviewTitle
-                Divider()
-                overrviewGrid
-                
-                additionalTitle
-                Divider()
-                additionalGrid
-                
+                ChartView(coin: vm.coin)
+                DetailGridView(title: "Overview", stats: vm.overviewStatistics)
+                DetailGridView(title: "Additional Information", stats: vm.additionalStatistics)
             }
             .padding()
         }
         .navigationTitle(vm.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItem
+            }
+        }
     }
 }
 
@@ -64,41 +61,15 @@ struct DetailView_Previews: PreviewProvider {
 }
 
 extension DetailView {
-    private var overrviewTitle: some View {
-        Text("Overview")
-            .font(.title)
-            .bold()
-            .foregroundColor(Color.theme.accent)
-            .frame(maxWidth: .infinity, alignment: .leading)
-    }
     
-    private var additionalTitle: some View {
-        Text("Additional Information")
-            .font(.title)
-            .bold()
-            .foregroundColor(Color.theme.accent)
-            .frame(maxWidth: .infinity, alignment: .leading)
-    }
-    
-    private var overrviewGrid: some View {
-        LazyVGrid(columns: columns,
-                  alignment: .leading,
-                  spacing: spacing,
-                  pinnedViews: []) {
-            ForEach(vm.overviewStatistics) { stat in
-                StatisticView(stat: stat)
-            }
-        }
-    }
-    
-    private var additionalGrid: some View {
-        LazyVGrid(columns: columns,
-                  alignment: .leading,
-                  spacing: spacing,
-                  pinnedViews: []) {
-            ForEach(vm.additionalStatistics) { stat in
-                StatisticView(stat: stat)
-            }
+    private var navigationBarTrailingItem: some View {
+        HStack {
+            Text(vm.coin.symbol.uppercased())
+                .font(.headline)
+                .foregroundColor(Color.theme.secondaryText)
+            
+            CoinImageView(coin: vm.coin)
+                .frame(width: 25, height: 25)
         }
     }
     
