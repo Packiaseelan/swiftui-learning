@@ -9,8 +9,11 @@ import SwiftUI
 
 struct DetailGridView: View {
     
-    let title: String?
-    let stats: [StatisticModel]
+    @State var showFullDescription: Bool = false
+    
+    private let title: String
+    private let stats: [StatisticModel]
+    private let description: String?
     
     private let columns: [GridItem] = [
         GridItem(.flexible()),
@@ -18,18 +21,17 @@ struct DetailGridView: View {
     ]
     private let spacing: CGFloat = 30.0
     
-    init(title: String? = nil, stats: [StatisticModel]) {
+    init(title: String, description: String? = nil, stats: [StatisticModel]) {
         self.title = title
         self.stats = stats
+        self.description = description
     }
     
     var body: some View {
         VStack {
-            if title != nil {
-                titleView
-                Divider()
-            }
-            
+            titleView
+            Divider()
+            descriptionSection
             gridView
         }
     }
@@ -38,7 +40,7 @@ struct DetailGridView: View {
 struct DetailGridView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailGridView(stats: [
+            DetailGridView(title: "Overview", stats: [
                 dev.stat1, dev.stat2, dev.stat3
             ])
             
@@ -54,7 +56,7 @@ struct DetailGridView_Previews: PreviewProvider {
 extension DetailGridView {
     
     private var titleView: some View {
-        Text(title ?? "")
+        Text(title)
             .font(.title)
             .bold()
             .foregroundColor(Color.theme.accent)
@@ -69,6 +71,35 @@ extension DetailGridView {
             ForEach(stats) { stat in
                 StatisticView(stat: stat)
             }
+        }
+    }
+    
+    private var descriptionSection: some View {
+        ZStack {
+            if let description = description,
+               !description.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(description)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                        .lineLimit(showFullDescription ? nil : 3)
+                    
+                    Button(action: onReadMore) {
+                        Text(showFullDescription ? "Less" : "Read more...")
+                            .font(.caption)
+                            .bold()
+                            .padding(.vertical, 4)
+                    }
+                    .accentColor(.blue)
+                }
+            }
+        }
+        .animation(.none, value: description)
+    }
+    
+    private func onReadMore() {
+        withAnimation(.easeInOut) {
+            showFullDescription.toggle()
         }
     }
     

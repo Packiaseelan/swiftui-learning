@@ -39,10 +39,7 @@ struct DetailView: View {
         ScrollView {
             VStack(spacing: 20) {
                 ChartView(coin: vm.coin)
-                titleView
-                Divider()
-                descriptionSection
-                DetailGridView(stats: vm.overviewStatistics)
+                DetailGridView(title: "Overview", description: vm.description, stats: vm.overviewStatistics)
                 DetailGridView(title: "Additional Information", stats: vm.additionalStatistics)
                 websiteSection
             }
@@ -90,29 +87,6 @@ extension DetailView {
             .bold()
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
-    }
-    
-    private var descriptionSection: some View {
-        ZStack {
-            if let description = vm.description,
-               !description.isEmpty {
-                VStack(alignment: .leading) {
-                    Text(description)
-                        .font(.callout)
-                        .foregroundColor(Color.theme.secondaryText)
-                        .lineLimit(showFullDescription ? nil : 3)
-                    
-                    Button(action: onReadMore) {
-                        Text(showFullDescription ? "Less" : "Read more...")
-                            .font(.caption)
-                            .bold()
-                            .padding(.vertical, 4)
-                    }
-                    .accentColor(.blue)
-                }
-            }
-        }
-        .animation(.none, value: vm.description)
     }
     
     private var websiteSection: some View {
