@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E41D22352863220700461CBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D22342863220700461CBF /* String.swift */; };
 		E41D22392863584B00461CBF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D22382863584B00461CBF /* SettingsView.swift */; };
+		E41D223D28636C0500461CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41D223C28636C0500461CBF /* LaunchScreen.storyboard */; };
+		E41D223F28636DC200461CBF /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D223E28636DC200461CBF /* LaunchView.swift */; };
 		E472C58F285D938100A54CE0 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C58E285D938100A54CE0 /* CoinImageView.swift */; };
 		E472C591285D95B600A54CE0 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */; };
 		E472C593285D95E300A54CE0 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C592285D95E300A54CE0 /* CoinImageService.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		E41D22342863220700461CBF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E41D22382863584B00461CBF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E41D223C28636C0500461CBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E41D223E28636DC200461CBF /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		E472C58E285D938100A54CE0 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		E472C592285D95E300A54CE0 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
@@ -118,6 +122,23 @@
 				E41D22382863584B00461CBF /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E41D223A28636BD900461CBF /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E41D223B28636BE300461CBF /* View */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		E41D223B28636BE300461CBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E41D223C28636C0500461CBF /* LaunchScreen.storyboard */,
+				E41D223E28636DC200461CBF /* LaunchView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E472C58D285D937200A54CE0 /* CoinImage */ = {
@@ -245,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				E4FF969828530A7100098F91 /* Components */,
+				E41D223A28636BD900461CBF /* Launch */,
 				E4FF969528530A5300098F91 /* Home */,
 				E48D6F222862005600CDCE18 /* Detail */,
 				E41D22362863580E00461CBF /* Settings */,
@@ -369,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41D223D28636C0500461CBF /* LaunchScreen.storyboard in Resources */,
 				E4FF9689285301D000098F91 /* Preview Assets.xcassets in Resources */,
 				E4FF96902853032400098F91 /* Assets.xcassets in Resources */,
 			);
@@ -397,6 +420,7 @@
 				E472C59D285F4F9400A54CE0 /* StatisticView.swift in Sources */,
 				E472C599285E408600A54CE0 /* UIApplication.swift in Sources */,
 				E48D6F2A28621A9200CDCE18 /* DetailViewModel.swift in Sources */,
+				E41D223F28636DC200461CBF /* LaunchView.swift in Sources */,
 				E48D6F302862DF2100CDCE18 /* Date.swift in Sources */,
 				E4FF969D28530B2300098F91 /* CircleButtonView.swift in Sources */,
 				E48D6F262862008400CDCE18 /* DetailView.swift in Sources */,
@@ -553,6 +577,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -583,6 +608,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
