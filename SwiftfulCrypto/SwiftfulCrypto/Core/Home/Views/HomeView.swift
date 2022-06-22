@@ -12,6 +12,7 @@ struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
     @State var showPortfolio: Bool = false
     @State var showPortfolioView: Bool = false
+    @State var showSettingsView: Bool = false
     
     @State var selectedCoin: CoinModel? = nil
     @State var showDetailView: Bool = false
@@ -21,10 +22,10 @@ struct HomeView: View {
             // background layer
             Color.theme.background
                 .ignoresSafeArea()
-                .sheet(isPresented: $showPortfolioView, content: {
+                .fullScreenCover(isPresented: $showPortfolioView) {
                     PortfolioView()
                         .environmentObject(vm)
-                })
+                }
             
             // Content
             VStack {
@@ -58,6 +59,9 @@ struct HomeView: View {
                 }
                 
                 Spacer(minLength: 0)
+            }
+            .fullScreenCover(isPresented: $showSettingsView) {
+                SettingsView()
             }
         }
         .background(
@@ -153,6 +157,8 @@ extension HomeView {
     private func onLeftButtonClicked() {
         if showPortfolio {
             showPortfolioView.toggle()
+        } else {
+            showSettingsView.toggle()
         }
     }
     
