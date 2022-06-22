@@ -40,11 +40,13 @@ struct ChartView: View {
         }
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                withAnimation(.linear(duration: 2.0)) {
-                    percentage = 1.0
-                }
+        .onAppear(perform: onAppear)
+    }
+    
+    private func onAppear() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            withAnimation(.linear(duration: 2.0)) {
+                percentage = 1.0
             }
         }
     }
@@ -52,7 +54,13 @@ struct ChartView: View {
 
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartView(coin: dev.coin)
+        Group {
+            ChartView(coin: dev.coin)
+            
+            ChartView(coin: dev.coin)
+                .preferredColorScheme(.dark)
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
 

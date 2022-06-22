@@ -22,6 +22,7 @@ struct DetailLoadingView: View {
 struct DetailView: View {
     
     @StateObject var vm: DetailViewModel
+    @State var showFullDescription: Bool = false
     
     private let columns: [GridItem] = [
         GridItem(.flexible()),
@@ -38,8 +39,12 @@ struct DetailView: View {
         ScrollView {
             VStack(spacing: 20) {
                 ChartView(coin: vm.coin)
-                DetailGridView(title: "Overview", stats: vm.overviewStatistics)
+                titleView
+                Divider()
+                descriptionSection
+                DetailGridView(stats: vm.overviewStatistics)
                 DetailGridView(title: "Additional Information", stats: vm.additionalStatistics)
+                websiteSection
             }
             .padding()
         }
@@ -48,6 +53,12 @@ struct DetailView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 navigationBarTrailingItem
             }
+        }
+    }
+    
+    private func onReadMore() {
+        withAnimation(.easeInOut) {
+            showFullDescription.toggle()
         }
     }
 }
@@ -71,6 +82,54 @@ extension DetailView {
             CoinImageView(coin: vm.coin)
                 .frame(width: 25, height: 25)
         }
+    }
+    
+    private var titleView: some View {
+        Text("Overview")
+            .font(.title)
+            .bold()
+            .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var descriptionSection: some View {
+        ZStack {
+            if let description = vm.description,
+               !description.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(description)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                        .lineLimit(showFullDescription ? nil : 3)
+                    
+                    Button(action: onReadMore) {
+                        Text(showFullDescription ? "Less" : "Read more...")
+                            .font(.caption)
+                            .bold()
+                            .padding(.vertical, 4)
+                    }
+                    .accentColor(.blue)
+                }
+            }
+        }
+        .animation(.none, value: vm.description)
+    }
+    
+    private var websiteSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            if let websiteString = vm.websiteURL,
+               let url = URL(string: websiteString) {
+                Link("Website", destination: url)
+            }
+            
+            if let subredditString = vm.subredditURL,
+               let url = URL(string: subredditString) {
+                Link("Reddit", destination: url)
+            }
+        }
+        .accentColor(.blue)
+        .font(.headline)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
 }

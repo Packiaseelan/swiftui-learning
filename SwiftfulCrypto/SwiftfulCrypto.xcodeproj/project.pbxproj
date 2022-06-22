@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41D22352863220700461CBF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D22342863220700461CBF /* String.swift */; };
 		E472C58F285D938100A54CE0 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C58E285D938100A54CE0 /* CoinImageView.swift */; };
 		E472C591285D95B600A54CE0 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */; };
 		E472C593285D95E300A54CE0 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C592285D95E300A54CE0 /* CoinImageService.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41D22342863220700461CBF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E472C58E285D938100A54CE0 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		E472C590285D95B600A54CE0 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		E472C592285D95E300A54CE0 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		E4FF9691285303A900098F91 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E41D22342863220700461CBF /* String.swift */,
 				E48D6F2F2862DF2100CDCE18 /* Date.swift */,
 				E4FF96A928531F4F00098F91 /* Double.swift */,
 				E4FF96A528531A5E00098F91 /* PreviewProvider.swift */,
@@ -386,6 +389,7 @@
 				E472C597285E3BBD00A54CE0 /* SearchBarView.swift in Sources */,
 				E4FF96932853048200098F91 /* Color.swift in Sources */,
 				E472C591285D95B600A54CE0 /* CoinImageViewModel.swift in Sources */,
+				E41D22352863220700461CBF /* String.swift in Sources */,
 				E472C58F285D938100A54CE0 /* CoinImageView.swift in Sources */,
 				E48D6F2E286255A200CDCE18 /* ChartView.swift in Sources */,
 				E4FF96AA28531F4F00098F91 /* Double.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailGridView: View {
     
-    let title: String
+    let title: String?
     let stats: [StatisticModel]
     
     private let columns: [GridItem] = [
@@ -18,10 +18,18 @@ struct DetailGridView: View {
     ]
     private let spacing: CGFloat = 30.0
     
+    init(title: String? = nil, stats: [StatisticModel]) {
+        self.title = title
+        self.stats = stats
+    }
+    
     var body: some View {
         VStack {
-            titleView
-            Divider()
+            if title != nil {
+                titleView
+                Divider()
+            }
+            
             gridView
         }
     }
@@ -30,7 +38,7 @@ struct DetailGridView: View {
 struct DetailGridView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailGridView(title: "Overview", stats: [
+            DetailGridView(stats: [
                 dev.stat1, dev.stat2, dev.stat3
             ])
             
@@ -46,7 +54,7 @@ struct DetailGridView_Previews: PreviewProvider {
 extension DetailGridView {
     
     private var titleView: some View {
-        Text(title)
+        Text(title ?? "")
             .font(.title)
             .bold()
             .foregroundColor(Color.theme.accent)
