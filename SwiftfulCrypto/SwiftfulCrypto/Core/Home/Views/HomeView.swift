@@ -22,7 +22,7 @@ struct HomeView: View {
             // background layer
             Color.theme.background
                 .ignoresSafeArea()
-                .fullScreenCover(isPresented: $showPortfolioView) {
+                .sheet(isPresented: $showPortfolioView) {
                     PortfolioView()
                         .environmentObject(vm)
                 }
@@ -35,32 +35,24 @@ struct HomeView: View {
                 columnTitle
                 
                 if !showPortfolio {
-                    List {
-                        ForEach(vm.allCoins) { coin in
-                            CoinRowView(coin: coin, showHoldingColumn: false)
-                                .onTapGesture { navigateToDetail(coin: coin) }
-                                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
-                        }
-                    }
-                    .listStyle(PlainListStyle())
-                    .transition(.move(edge: .leading))
+                    allCoinList
+                        .transition(.move(edge: .leading))
                 }
                 
                 if showPortfolio {
-                    List {
-                        ForEach(vm.portfolioCoins) { coin in
-                            CoinRowView(coin: coin, showHoldingColumn: true)
-                                .onTapGesture { navigateToDetail(coin: coin) }
-                                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    ZStack {
+                        if vm.portfolioCoins.isEmpty && vm.searchText.isEmpty {
+                            portfolioEmptyText
+                        } else {
+                            portfolioCoinList
                         }
                     }
-                    .listStyle(PlainListStyle())
                     .transition(.move(edge: .trailing))
                 }
                 
                 Spacer(minLength: 0)
             }
-            .fullScreenCover(isPresented: $showSettingsView) {
+            .sheet(isPresented: $showSettingsView) {
                 SettingsView()
             }
         }
@@ -142,6 +134,39 @@ extension HomeView {
         .padding(.horizontal)
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
+    }
+    
+    private var allCoinList: some View {
+        List {
+            ForEach(vm.allCoins) { coin in
+                CoinRowView(coin: coin, showHoldingColumn: false)
+                    .onTapGesture { navigateToDetail(coin: coin) }
+                    .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+    
+    private var portfolioCoinList: some View {
+        List {
+            ForEach(vm.portfolioCoins) { coin in
+                CoinRowView(coin: coin, showHoldingColumn: true)
+                    .onTapGesture { navigateToDetail(coin: coin) }
+                    .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+    
+    private var portfolioEmptyText: some View {
+        Text("You haven't added any coins to your portfolio yet. Click the + button to get started! 🧐")
+            .font(.callout)
+            .foregroundColor(Color.theme.accent)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+            .padding(50)
     }
 }
 

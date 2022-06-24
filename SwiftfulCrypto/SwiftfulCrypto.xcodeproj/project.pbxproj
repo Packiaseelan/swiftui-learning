@@ -38,7 +38,6 @@
 		E490F45228609D0F00F338BD /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E490F45028609D0F00F338BD /* PortfolioContainer.xcdatamodeld */; };
 		E490F45428609D7300F338BD /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490F45328609D7300F338BD /* PortfolioDataService.swift */; };
 		E4FF9682285301CF00098F91 /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF9681285301CF00098F91 /* SwiftfulCryptoApp.swift */; };
-		E4FF9684285301CF00098F91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF9683285301CF00098F91 /* ContentView.swift */; };
 		E4FF9689285301D000098F91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FF9688285301D000098F91 /* Preview Assets.xcassets */; };
 		E4FF96902853032400098F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FF968F2853032400098F91 /* Assets.xcassets */; };
 		E4FF96932853048200098F91 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF96922853048200098F91 /* Color.swift */; };
@@ -84,7 +83,6 @@
 		E490F45328609D7300F338BD /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		E4FF967E285301CF00098F91 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FF9681285301CF00098F91 /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
-		E4FF9683285301CF00098F91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4FF9688285301D000098F91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4FF968F2853032400098F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		E4FF96922853048200098F91 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 				E476ED42285B568700C29023 /* Services */,
 				E4FF96A02853164B00098F91 /* Models */,
 				E4FF969428530A4600098F91 /* Core */,
-				E4FF9683285301CF00098F91 /* ContentView.swift */,
 				E4FF968F2853032400098F91 /* Assets.xcassets */,
 				E4FF9687285301D000098F91 /* Preview Content */,
 			);
@@ -408,7 +405,6 @@
 				E4FF96A828531A9700098F91 /* CoinRowView.swift in Sources */,
 				E472C59B285F4EE300A54CE0 /* StatisticModel.swift in Sources */,
 				E476ED3F285B48E000C29023 /* HomeViewModel.swift in Sources */,
-				E4FF9684285301CF00098F91 /* ContentView.swift in Sources */,
 				E4FF969A28530A8400098F91 /* HomeView.swift in Sources */,
 				E490F448286039A000F338BD /* MarketDataService.swift in Sources */,
 				E490F44E286049E100F338BD /* CoinLogoView.swift in Sources */,

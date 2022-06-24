@@ -139,7 +139,7 @@ class HomeViewModel: ObservableObject {
                 .reduce(0, +)
                 
         
-        let percentage  = ((portfolioValues - previousValues) / previousValues ) * 100
+        let percentage  = ((portfolioValues - previousValues) / previousValues )
         
         let marketCap = StatisticModel(title: "Market Cap", value: data.marketCap, percentageChange: data.marketCapChangePercentage24HUsd)
         let volume = StatisticModel(title: "Volume", value: data.volume)

@@ -16,6 +16,8 @@ struct SwiftfulCryptoApp: App {
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color.theme.accent)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color.theme.accent)]
+        UINavigationBar.appearance().tintColor = UIColor(Color.theme.accent)
+        UITableView.appearance().backgroundColor = UIColor.clear
     }
     
     var body: some Scene {
@@ -26,6 +28,7 @@ struct SwiftfulCryptoApp: App {
                         .navigationBarHidden(true)
                 }
                 .environmentObject(vm)
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 ZStack {
                     if showLauncView {
