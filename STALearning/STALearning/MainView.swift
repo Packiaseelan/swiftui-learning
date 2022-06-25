@@ -14,8 +14,12 @@ struct MainView: View {
                 NavigationLink("ViewModifier") {
                     ViewModifierBootcamp()
                 }
+                NavigationLink("Button Style") {
+                    ButtonStyleBootcamp()
+                }
             }
         }
+        .listStyle(PlainListStyle())
         .navigationTitle("STA Learning")
     }
 }
