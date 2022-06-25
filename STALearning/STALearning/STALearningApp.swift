@@ -11,7 +11,9 @@ import SwiftUI
 struct STALearningApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                MainView()
+            }
         }
     }
 }
