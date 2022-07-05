@@ -17,6 +17,9 @@ struct MainView: View {
                 NavigationLink("Button Style") {
                     ButtonStyleBootcamp()
                 }
+                NavigationLink("Any Transition") {
+                    AnyTransitionBootcamp()
+                }
             }
         }
         .listStyle(PlainListStyle())

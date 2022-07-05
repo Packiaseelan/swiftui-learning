@@ -15,6 +15,8 @@
 		E423C3662866C60C001D3F0F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423C3652866C60C001D3F0F /* MainView.swift */; };
 		E423C3692866CB3F001D3F0F /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423C3682866CB3F001D3F0F /* PressableButtonStyle.swift */; };
 		E423C36B2866CB4E001D3F0F /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423C36A2866CB4E001D3F0F /* ButtonStyleBootcamp.swift */; };
+		E423C36D2866D387001D3F0F /* AnyTransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423C36C2866D387001D3F0F /* AnyTransitionBootcamp.swift */; };
+		E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D692B28747AC200DF2713 /* RotationViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E423C3652866C60C001D3F0F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E423C3682866CB3F001D3F0F /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
 		E423C36A2866CB4E001D3F0F /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
+		E423C36C2866D387001D3F0F /* AnyTransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionBootcamp.swift; sourceTree = "<group>"; };
+		E44D692B28747AC200DF2713 /* RotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				E423C3652866C60C001D3F0F /* MainView.swift */,
 				E423C3622866C31B001D3F0F /* ViewModifiers */,
 				E423C3672866CB22001D3F0F /* ButtonStyle */,
+				E44D692A28747AA400DF2713 /* AnyTransition */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -93,6 +98,15 @@
 				E423C36A2866CB4E001D3F0F /* ButtonStyleBootcamp.swift */,
 			);
 			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
+		E44D692A28747AA400DF2713 /* AnyTransition */ = {
+			isa = PBXGroup;
+			children = (
+				E423C36C2866D387001D3F0F /* AnyTransitionBootcamp.swift */,
+				E44D692B28747AC200DF2713 /* RotationViewModifier.swift */,
+			);
+			path = AnyTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +182,11 @@
 				E423C36B2866CB4E001D3F0F /* ButtonStyleBootcamp.swift in Sources */,
 				E423C3612866BC69001D3F0F /* ViewModifierBootcamp.swift in Sources */,
 				E423C3662866C60C001D3F0F /* MainView.swift in Sources */,
+				E423C36D2866D387001D3F0F /* AnyTransitionBootcamp.swift in Sources */,
 				E423C3642866C344001D3F0F /* DefaultButtonViewModifier.swift in Sources */,
 				E423C3532866BBA5001D3F0F /* STALearningApp.swift in Sources */,
 				E423C3692866CB3F001D3F0F /* PressableButtonStyle.swift in Sources */,
+				E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
