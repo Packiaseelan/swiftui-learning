@@ -21,6 +21,15 @@ struct MainView: View {
                     AnyTransitionBootcamp()
                 }
             }
+            
+            Section(header: Text("Matched Geometry Effect")) {
+                NavigationLink("Example 1") {
+                    MatchedGeometryExample1()
+                }
+                NavigationLink("Example 2") {
+                    MatchedGeometryExample1()
+                }
+            }
         }
         .listStyle(PlainListStyle())
         .navigationTitle("STA Learning")
