@@ -30,6 +30,18 @@ struct MainView: View {
                     MatchedGeometryExample1()
                 }
             }
+            
+            Section(header: Text("Shapes")) {
+                NavigationLink("Custom Shapes") {
+                    CustomShapesBootcamp()
+                }
+                NavigationLink("Custom Curves") {
+                    CustomCurvesBootcamp()
+                }
+                NavigationLink("Animatable Data") {
+                    AnimatableDataBootcamp()
+                }
+            }
         }
         .listStyle(PlainListStyle())
         .navigationTitle("STA Learning")
