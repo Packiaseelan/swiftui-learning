@@ -42,6 +42,18 @@ struct MainView: View {
                     AnimatableDataBootcamp()
                 }
             }
+            
+            Section(header: Text("Generics")) {
+                NavigationLink("Generic") {
+                    GenericsBootcamp()
+                }
+                NavigationLink("ViewBuilder") {
+                    ViewBuilderBootcamp()
+                }
+                NavigationLink("Local ViewBuilder") {
+                    LocalViewBuilderBootcamp(type: .one)
+                }
+            }
         }
         .listStyle(PlainListStyle())
         .navigationTitle("STA Learning")
