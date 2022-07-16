@@ -54,6 +54,18 @@ struct MainView: View {
                     LocalViewBuilderBootcamp(type: .one)
                 }
             }
+            
+            Section(header: Text("Preference Key")) {
+                NavigationLink("Preference Key") {
+                    PreferenceKeyBootcamp()
+                }
+                NavigationLink("Geometry") {
+                    GeometryPreferenceKeyBootcamp()
+                }
+                NavigationLink("Scrollview") {
+                    ScrollViewOffsetPreferenceKeyBootcamp()
+                }
+            }
         }
         .listStyle(PlainListStyle())
         .navigationTitle("STA Learning")
