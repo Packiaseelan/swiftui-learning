@@ -66,8 +66,19 @@ struct MainView: View {
                     ScrollViewOffsetPreferenceKeyBootcamp()
                 }
             }
+            
+            Section(header: Text("Tabbars")) {
+                NavigationLink("App Tabbar") {
+                    AppTabBarView()
+                }
+                NavigationLink("Custom Tabbar") {
+                    CustomTabBArView(tabs: [
+                        .home, .favourites, .profile
+                    ], selection: .constant(.home), localSelection: .home)
+                }
+            }
         }
-        .listStyle(PlainListStyle())
+        .listStyle(GroupedListStyle())
         .navigationTitle("STA Learning")
     }
 }
