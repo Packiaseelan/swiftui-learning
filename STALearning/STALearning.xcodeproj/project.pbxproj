@@ -33,6 +33,12 @@
 		E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D69302874998B00DF2713 /* MatchedGeometryExample1.swift */; };
 		E44D693328749B1400DF2713 /* MatchedGeometryExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D693228749B1400DF2713 /* MatchedGeometryExample2.swift */; };
 		E44D69352876AB4400DF2713 /* CustomShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D69342876AB4400DF2713 /* CustomShapesBootcamp.swift */; };
+		E472CC4528B0B2FF0005A364 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4428B0B2FF0005A364 /* CustomNavBarView.swift */; };
+		E472CC4728B0C3870005A364 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4628B0C3870005A364 /* CustomNavBarContainerView.swift */; };
+		E472CC4928B0DD680005A364 /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4828B0DD680005A364 /* AppNavBarView.swift */; };
+		E472CC4B28B1F3B40005A364 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4A28B1F3B40005A364 /* CustomNavView.swift */; };
+		E472CC4D28B270140005A364 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4C28B270140005A364 /* CustomNavLink.swift */; };
+		E472CC4F28B322CF0005A364 /* CustomNavBarPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC4E28B322CF0005A364 /* CustomNavBarPreferenceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +69,12 @@
 		E44D69302874998B00DF2713 /* MatchedGeometryExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryExample1.swift; sourceTree = "<group>"; };
 		E44D693228749B1400DF2713 /* MatchedGeometryExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryExample2.swift; sourceTree = "<group>"; };
 		E44D69342876AB4400DF2713 /* CustomShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootcamp.swift; sourceTree = "<group>"; };
+		E472CC4428B0B2FF0005A364 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		E472CC4628B0C3870005A364 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		E472CC4828B0DD680005A364 /* AppNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
+		E472CC4A28B1F3B40005A364 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		E472CC4C28B270140005A364 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		E472CC4E28B322CF0005A364 /* CustomNavBarPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 				E4316800287C3C4000790BC1 /* Generics */,
 				E4316809287F1D0900790BC1 /* PreferenceKey */,
 				E40BE524289CD53B00A429A0 /* CustomTabBar */,
+				E4B4EB1D28B099E6008DBF8F /* CustomNavBar */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -197,6 +210,19 @@
 			path = MatchedGeometryEffect;
 			sourceTree = "<group>";
 		};
+		E4B4EB1D28B099E6008DBF8F /* CustomNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				E472CC4828B0DD680005A364 /* AppNavBarView.swift */,
+				E472CC4A28B1F3B40005A364 /* CustomNavView.swift */,
+				E472CC4428B0B2FF0005A364 /* CustomNavBarView.swift */,
+				E472CC4628B0C3870005A364 /* CustomNavBarContainerView.swift */,
+				E472CC4C28B270140005A364 /* CustomNavLink.swift */,
+				E472CC4E28B322CF0005A364 /* CustomNavBarPreferenceKey.swift */,
+			);
+			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,15 +295,20 @@
 			files = (
 				E431680D2880408800790BC1 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */,
 				E44D693328749B1400DF2713 /* MatchedGeometryExample2.swift in Sources */,
+				E472CC4928B0DD680005A364 /* AppNavBarView.swift in Sources */,
+				E472CC4F28B322CF0005A364 /* CustomNavBarPreferenceKey.swift in Sources */,
 				E40BE528289D139100A429A0 /* CustomTabBArView.swift in Sources */,
 				E40BE526289CD63200A429A0 /* AppTabBarView.swift in Sources */,
 				E43167FD287BDB4A00790BC1 /* CustomCurvesBootcamp.swift in Sources */,
 				E423C36B2866CB4E001D3F0F /* ButtonStyleBootcamp.swift in Sources */,
 				E40A2D2D28AE12CC0001EA1B /* TabBarItem.swift in Sources */,
 				E4316808287EBB8800790BC1 /* PreferenceKeyBootcamp.swift in Sources */,
+				E472CC4D28B270140005A364 /* CustomNavLink.swift in Sources */,
 				E423C3612866BC69001D3F0F /* ViewModifierBootcamp.swift in Sources */,
 				E423C3662866C60C001D3F0F /* MainView.swift in Sources */,
 				E4316804287E976900790BC1 /* ViewBuilderBootcamp.swift in Sources */,
+				E472CC4728B0C3870005A364 /* CustomNavBarContainerView.swift in Sources */,
+				E472CC4B28B1F3B40005A364 /* CustomNavView.swift in Sources */,
 				E431680B28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */,
 				E4316802287C3C5900790BC1 /* GenericsBootcamp.swift in Sources */,
@@ -291,6 +322,7 @@
 				E423C3532866BBA5001D3F0F /* STALearningApp.swift in Sources */,
 				E423C3692866CB3F001D3F0F /* PressableButtonStyle.swift in Sources */,
 				E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */,
+				E472CC4528B0B2FF0005A364 /* CustomNavBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
