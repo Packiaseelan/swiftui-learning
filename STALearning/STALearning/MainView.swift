@@ -77,6 +77,21 @@ struct MainView: View {
                     ], selection: .constant(.home), localSelection: .home)
                 }
             }
+            
+            Section(header: Text("UI Representables")) {
+                NavigationLink("UI View") {
+                    UIViewRepresentableBootcamp()
+                }
+                NavigationLink("UI View Controller") {
+                    UIViewControllerRepresentableBootcamp()
+                }
+            }
+            
+            Section(header: Text("Protocols")) {
+                NavigationLink("Protocols") {
+                    ProtocolsBootcamp()
+                }
+            }
         }
         .listStyle(GroupedListStyle())
         .navigationTitle("STA Learning")
