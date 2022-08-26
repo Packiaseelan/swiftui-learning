@@ -42,6 +42,7 @@
 		E472CC5228B364B20005A364 /* UIViewRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC5128B364B20005A364 /* UIViewRepresentableBootcamp.swift */; };
 		E472CC5528B5EB080005A364 /* UIViewControllerRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC5428B5EB080005A364 /* UIViewControllerRepresentableBootcamp.swift */; };
 		E472CC5828B639670005A364 /* ProtocolsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC5728B639670005A364 /* ProtocolsBootcamp.swift */; };
+		E472CC5B28B755F10005A364 /* DependencyInjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472CC5A28B755F10005A364 /* DependencyInjectionBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		E472CC5128B364B20005A364 /* UIViewRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootcamp.swift; sourceTree = "<group>"; };
 		E472CC5428B5EB080005A364 /* UIViewControllerRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableBootcamp.swift; sourceTree = "<group>"; };
 		E472CC5728B639670005A364 /* ProtocolsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsBootcamp.swift; sourceTree = "<group>"; };
+		E472CC5A28B755F10005A364 /* DependencyInjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				E472CC5028B364970005A364 /* UIViewRepresentable */,
 				E472CC5328B5EAA40005A364 /* UIViewControllerRepresentable */,
 				E472CC5628B639540005A364 /* Protocols */,
+				E472CC5928B755D80005A364 /* DependencyInjection */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -241,6 +244,14 @@
 				E472CC5728B639670005A364 /* ProtocolsBootcamp.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E472CC5928B755D80005A364 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				E472CC5A28B755F10005A364 /* DependencyInjectionBootcamp.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		E4B4EB1D28B099E6008DBF8F /* CustomNavBar */ = {
@@ -359,6 +370,7 @@
 				E423C3692866CB3F001D3F0F /* PressableButtonStyle.swift in Sources */,
 				E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */,
 				E472CC4528B0B2FF0005A364 /* CustomNavBarView.swift in Sources */,
+				E472CC5B28B755F10005A364 /* DependencyInjectionBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
