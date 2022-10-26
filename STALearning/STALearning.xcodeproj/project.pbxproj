@@ -52,6 +52,7 @@
 		E49A51FB28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */; };
 		E4A134662909089C001AE824 /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */; };
 		E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */; };
+		E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681F290966E600C05D47 /* SignedInHomeView.swift */; };
 		E4DA6BDD28D82BDE003383D2 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */; };
 		E4DA6BDF28D82C36003383D2 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel_Test.swift; sourceTree = "<group>"; };
 		E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
 		E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampViewModel.swift; sourceTree = "<group>"; };
+		E4D7681F290966E600C05D47 /* SignedInHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInHomeView.swift; sourceTree = "<group>"; };
 		E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 			children = (
 				E40E3E9E29065F77009C4C2A /* UITestingBootcampView.swift */,
 				E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */,
+				E4D7681F290966E600C05D47 /* SignedInHomeView.swift */,
 			);
 			path = UITesting;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				E431680B28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */,
 				E472CC5828B639670005A364 /* ProtocolsBootcamp.swift in Sources */,
+				E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */,
 				E40E3E9F29065F77009C4C2A /* UITestingBootcampView.swift in Sources */,
 				E4316802287C3C5900790BC1 /* GenericsBootcamp.swift in Sources */,
 				E40A2D2928AE00660001EA1B /* CustomTabBarContainerView.swift in Sources */,
