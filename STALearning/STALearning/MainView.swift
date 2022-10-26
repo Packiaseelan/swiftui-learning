@@ -92,6 +92,16 @@ struct MainView: View {
                     ProtocolsBootcamp()
                 }
             }
+            
+            Section(header: Text("Testing")) {
+                NavigationLink("Unit Testing") {
+                    UnitTestingBootcampView(isPremium: false)
+                }
+                NavigationLink("UI Testing") {
+                    UITestingBootcampView(currentUserIsSignedIn: false)
+                }
+
+            }
         }
         .listStyle(GroupedListStyle())
         .navigationTitle("STA Learning")
