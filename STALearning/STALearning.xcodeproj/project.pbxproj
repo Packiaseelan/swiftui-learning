@@ -12,6 +12,9 @@
 		E40A2D2D28AE12CC0001EA1B /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2D2C28AE12CC0001EA1B /* TabBarItem.swift */; };
 		E40BE526289CD63200A429A0 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40BE525289CD63200A429A0 /* AppTabBarView.swift */; };
 		E40BE528289D139100A429A0 /* CustomTabBArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40BE527289D139100A429A0 /* CustomTabBArView.swift */; };
+		E40E3E9F29065F77009C4C2A /* UITestingBootcampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E3E9E29065F77009C4C2A /* UITestingBootcampView.swift */; };
+		E40E3EA72906868F009C4C2A /* STALearning_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E3EA62906868F009C4C2A /* STALearning_UITests.swift */; };
+		E40E3EA92906868F009C4C2A /* STALearning_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E3EA82906868F009C4C2A /* STALearning_UITestsLaunchTests.swift */; };
 		E423C3532866BBA5001D3F0F /* STALearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423C3522866BBA5001D3F0F /* STALearningApp.swift */; };
 		E423C3572866BBA6001D3F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E423C3562866BBA6001D3F0F /* Assets.xcassets */; };
 		E423C35A2866BBA6001D3F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E423C3592866BBA6001D3F0F /* Preview Assets.xcassets */; };
@@ -47,11 +50,20 @@
 		E49A51EC28D2F2EB004D1282 /* UnitTestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A51EB28D2F2EB004D1282 /* UnitTestingBootcampViewModel.swift */; };
 		E49A51F428D2F48F004D1282 /* STALearning_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A51F328D2F48F004D1282 /* STALearning_Tests.swift */; };
 		E49A51FB28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */; };
+		E4A134662909089C001AE824 /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */; };
+		E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */; };
 		E4DA6BDD28D82BDE003383D2 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */; };
 		E4DA6BDF28D82C36003383D2 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E40E3EAA2906868F009C4C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E423C3472866BBA5001D3F0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E423C34E2866BBA5001D3F0F;
+			remoteInfo = STALearning;
+		};
 		E49A51F528D2F48F004D1282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E423C3472866BBA5001D3F0F /* Project object */;
@@ -67,6 +79,10 @@
 		E40A2D2C28AE12CC0001EA1B /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		E40BE525289CD63200A429A0 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		E40BE527289D139100A429A0 /* CustomTabBArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBArView.swift; sourceTree = "<group>"; };
+		E40E3E9E29065F77009C4C2A /* UITestingBootcampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView.swift; sourceTree = "<group>"; };
+		E40E3EA42906868F009C4C2A /* STALearning_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STALearning_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40E3EA62906868F009C4C2A /* STALearning_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STALearning_UITests.swift; sourceTree = "<group>"; };
+		E40E3EA82906868F009C4C2A /* STALearning_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STALearning_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E423C34F2866BBA5001D3F0F /* STALearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STALearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E423C3522866BBA5001D3F0F /* STALearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STALearningApp.swift; sourceTree = "<group>"; };
 		E423C3562866BBA6001D3F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,11 +120,20 @@
 		E49A51F128D2F48F004D1282 /* STALearning_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STALearning_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49A51F328D2F48F004D1282 /* STALearning_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STALearning_Tests.swift; sourceTree = "<group>"; };
 		E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel_Test.swift; sourceTree = "<group>"; };
+		E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
+		E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampViewModel.swift; sourceTree = "<group>"; };
 		E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E40E3EA12906868F009C4C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E423C34C2866BBA5001D3F0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,11 +163,31 @@
 			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
+		E40E3E9D29065F57009C4C2A /* UITesting */ = {
+			isa = PBXGroup;
+			children = (
+				E40E3E9E29065F77009C4C2A /* UITestingBootcampView.swift */,
+				E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */,
+			);
+			path = UITesting;
+			sourceTree = "<group>";
+		};
+		E40E3EA52906868F009C4C2A /* STALearning_UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E40E3EA62906868F009C4C2A /* STALearning_UITests.swift */,
+				E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */,
+				E40E3EA82906868F009C4C2A /* STALearning_UITestsLaunchTests.swift */,
+			);
+			path = STALearning_UITests;
+			sourceTree = "<group>";
+		};
 		E423C3462866BBA5001D3F0F = {
 			isa = PBXGroup;
 			children = (
 				E423C3512866BBA5001D3F0F /* STALearning */,
 				E49A51F228D2F48F004D1282 /* STALearning_Tests */,
+				E40E3EA52906868F009C4C2A /* STALearning_UITests */,
 				E423C3502866BBA5001D3F0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +197,7 @@
 			children = (
 				E423C34F2866BBA5001D3F0F /* STALearning.app */,
 				E49A51F128D2F48F004D1282 /* STALearning_Tests.xctest */,
+				E40E3EA42906868F009C4C2A /* STALearning_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +221,7 @@
 				E472CC5628B639540005A364 /* Protocols */,
 				E472CC5928B755D80005A364 /* DependencyInjection */,
 				E440752F28B890330095F6AD /* UnitTesting */,
+				E40E3E9D29065F57009C4C2A /* UITesting */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -323,6 +370,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E40E3EA32906868F009C4C2A /* STALearning_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40E3EAC2906868F009C4C2A /* Build configuration list for PBXNativeTarget "STALearning_UITests" */;
+			buildPhases = (
+				E40E3EA02906868F009C4C2A /* Sources */,
+				E40E3EA12906868F009C4C2A /* Frameworks */,
+				E40E3EA22906868F009C4C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E40E3EAB2906868F009C4C2A /* PBXTargetDependency */,
+			);
+			name = STALearning_UITests;
+			productName = STALearning_UITests;
+			productReference = E40E3EA42906868F009C4C2A /* STALearning_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E423C34E2866BBA5001D3F0F /* STALearning */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E423C35D2866BBA6001D3F0F /* Build configuration list for PBXNativeTarget "STALearning" */;
@@ -368,6 +433,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					E40E3EA32906868F009C4C2A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = E423C34E2866BBA5001D3F0F;
+					};
 					E423C34E2866BBA5001D3F0F = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -392,11 +461,19 @@
 			targets = (
 				E423C34E2866BBA5001D3F0F /* STALearning */,
 				E49A51F028D2F48F004D1282 /* STALearning_Tests */,
+				E40E3EA32906868F009C4C2A /* STALearning_UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E40E3EA22906868F009C4C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E423C34D2866BBA5001D3F0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +493,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E40E3EA02906868F009C4C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40E3EA72906868F009C4C2A /* STALearning_UITests.swift in Sources */,
+				E4A134662909089C001AE824 /* UITestingBootcampView_UITests.swift in Sources */,
+				E40E3EA92906868F009C4C2A /* STALearning_UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E423C34B2866BBA5001D3F0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,9 +529,11 @@
 				E431680B28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */,
 				E472CC5828B639670005A364 /* ProtocolsBootcamp.swift in Sources */,
+				E40E3E9F29065F77009C4C2A /* UITestingBootcampView.swift in Sources */,
 				E4316802287C3C5900790BC1 /* GenericsBootcamp.swift in Sources */,
 				E40A2D2928AE00660001EA1B /* CustomTabBarContainerView.swift in Sources */,
 				E49A51EA28D2F187004D1282 /* UnitTestingBootcampView.swift in Sources */,
+				E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */,
 				E49A51EC28D2F2EB004D1282 /* UnitTestingBootcampViewModel.swift in Sources */,
 				E43167FF287C011800790BC1 /* AnimatableDataBootcamp.swift in Sources */,
 				E40A2D2B28AE0E8C0001EA1B /* TabBarItemsPreferenceKey.swift in Sources */,
@@ -473,6 +562,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E40E3EAB2906868F009C4C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E423C34E2866BBA5001D3F0F /* STALearning */;
+			targetProxy = E40E3EAA2906868F009C4C2A /* PBXContainerItemProxy */;
+		};
 		E49A51F628D2F48F004D1282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E423C34E2866BBA5001D3F0F /* STALearning */;
@@ -481,6 +575,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E40E3EAD2906868F009C4C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQH36CFX55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hexcreators.STALearning-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STALearning;
+			};
+			name = Debug;
+		};
+		E40E3EAE2906868F009C4C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQH36CFX55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hexcreators.STALearning-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STALearning;
+			};
+			name = Release;
+		};
 		E423C35B2866BBA6001D3F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -696,6 +828,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E40E3EAC2906868F009C4C2A /* Build configuration list for PBXNativeTarget "STALearning_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40E3EAD2906868F009C4C2A /* Debug */,
+				E40E3EAE2906868F009C4C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E423C34A2866BBA5001D3F0F /* Build configuration list for PBXProject "STALearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
