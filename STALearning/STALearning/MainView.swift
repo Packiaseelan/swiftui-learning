@@ -100,7 +100,12 @@ struct MainView: View {
                 NavigationLink("UI Testing") {
                     UITestingBootcampView(currentUserIsSignedIn: false)
                 }
-
+            }
+            
+            Section {
+                NavigationLink("Advanced Combine") {
+                    AdvancedCombineBootcamp()
+                }
             }
         }
         .listStyle(GroupedListStyle())

@@ -53,6 +53,9 @@
 		E4A134662909089C001AE824 /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */; };
 		E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */; };
 		E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681F290966E600C05D47 /* SignedInHomeView.swift */; };
+		E4D76822290996DB00C05D47 /* AdvancedCombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D76821290996DB00C05D47 /* AdvancedCombineBootcamp.swift */; };
+		E4D7682529099C7400C05D47 /* AdvancedCombineDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7682429099C7400C05D47 /* AdvancedCombineDataService.swift */; };
+		E4D7682729099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7682629099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift */; };
 		E4DA6BDD28D82BDE003383D2 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */; };
 		E4DA6BDF28D82C36003383D2 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +127,9 @@
 		E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
 		E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampViewModel.swift; sourceTree = "<group>"; };
 		E4D7681F290966E600C05D47 /* SignedInHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInHomeView.swift; sourceTree = "<group>"; };
+		E4D76821290996DB00C05D47 /* AdvancedCombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineBootcamp.swift; sourceTree = "<group>"; };
+		E4D7682429099C7400C05D47 /* AdvancedCombineDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineDataService.swift; sourceTree = "<group>"; };
+		E4D7682629099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineBootcampViewModel.swift; sourceTree = "<group>"; };
 		E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +231,7 @@
 				E472CC5928B755D80005A364 /* DependencyInjection */,
 				E440752F28B890330095F6AD /* UnitTesting */,
 				E40E3E9D29065F57009C4C2A /* UITesting */,
+				E4D76823290996E200C05D47 /* AdvancedCombine */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -368,6 +375,16 @@
 				E472CC4E28B322CF0005A364 /* CustomNavBarPreferenceKey.swift */,
 			);
 			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
+		E4D76823290996E200C05D47 /* AdvancedCombine */ = {
+			isa = PBXGroup;
+			children = (
+				E4D76821290996DB00C05D47 /* AdvancedCombineBootcamp.swift */,
+				E4D7682629099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift */,
+				E4D7682429099C7400C05D47 /* AdvancedCombineDataService.swift */,
+			);
+			path = AdvancedCombine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +535,7 @@
 				E472CC5528B5EB080005A364 /* UIViewControllerRepresentableBootcamp.swift in Sources */,
 				E40BE528289D139100A429A0 /* CustomTabBArView.swift in Sources */,
 				E40BE526289CD63200A429A0 /* AppTabBarView.swift in Sources */,
+				E4D7682529099C7400C05D47 /* AdvancedCombineDataService.swift in Sources */,
 				E43167FD287BDB4A00790BC1 /* CustomCurvesBootcamp.swift in Sources */,
 				E423C36B2866CB4E001D3F0F /* ButtonStyleBootcamp.swift in Sources */,
 				E40A2D2D28AE12CC0001EA1B /* TabBarItem.swift in Sources */,
@@ -534,11 +552,13 @@
 				E472CC5828B639670005A364 /* ProtocolsBootcamp.swift in Sources */,
 				E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */,
 				E40E3E9F29065F77009C4C2A /* UITestingBootcampView.swift in Sources */,
+				E4D7682729099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift in Sources */,
 				E4316802287C3C5900790BC1 /* GenericsBootcamp.swift in Sources */,
 				E40A2D2928AE00660001EA1B /* CustomTabBarContainerView.swift in Sources */,
 				E49A51EA28D2F187004D1282 /* UnitTestingBootcampView.swift in Sources */,
 				E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */,
 				E49A51EC28D2F2EB004D1282 /* UnitTestingBootcampViewModel.swift in Sources */,
+				E4D76822290996DB00C05D47 /* AdvancedCombineBootcamp.swift in Sources */,
 				E43167FF287C011800790BC1 /* AnimatableDataBootcamp.swift in Sources */,
 				E40A2D2B28AE0E8C0001EA1B /* TabBarItemsPreferenceKey.swift in Sources */,
 				E44D69352876AB4400DF2713 /* CustomShapesBootcamp.swift in Sources */,
