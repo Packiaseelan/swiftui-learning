@@ -106,6 +106,9 @@ struct MainView: View {
                 NavigationLink("Advanced Combine") {
                     AdvancedCombineBootcamp()
                 }
+                NavigationLink("Futures") {
+                    FuturesBootcamp()
+                }
             }
         }
         .listStyle(GroupedListStyle())
