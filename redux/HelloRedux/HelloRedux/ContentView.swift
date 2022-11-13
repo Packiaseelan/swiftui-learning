@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var store: Store
+    @State private var isPresented: Bool = false
+    @EnvironmentObject var store: Store<AppState>
     
     struct Props {
         var counter: Int
@@ -18,7 +19,7 @@ struct ContentView: View {
         var onAdd: (Int) -> ()
     }
     
-    private func map(state: State) -> Props {
+    private func map(state: CounterState) -> Props {
         Props(counter: state.counter, onIncrement: {
             store.dispatch(action: IncrementAction())
         }, onDecrement: {
@@ -29,8 +30,9 @@ struct ContentView: View {
     }
     
     var body: some View {
-        let props = map(state: store.state)
+        let props = map(state: store.state.counter)
         VStack {
+            Spacer()
             Text("\(props.counter)")
                 .padding()
             Button("Increment") {
@@ -42,14 +44,21 @@ struct ContentView: View {
             Button("Add") {
                 props.onAdd(100)
             }
+            Spacer()
+            Button("Add Task") {
+                isPresented.toggle()
+            }
+            Spacer()
         }
-        .padding()
+        .sheet(isPresented: $isPresented) {
+            AddTaskView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(Store(reducer: reducer))
+            .environmentObject(Store(reducer: appReducer, state: AppState()))
     }
 }
