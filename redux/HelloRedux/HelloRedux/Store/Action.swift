@@ -20,3 +20,5 @@ struct AddAction: Action {
 struct AddTaskAction: Action {
     let task: Task
 }
+
+struct IncrementActionAsync: Action {}
