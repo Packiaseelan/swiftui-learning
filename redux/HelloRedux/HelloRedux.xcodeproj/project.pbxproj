@@ -18,6 +18,7 @@
 		E45C7F042920BEC9003A0688 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7F032920BEC9003A0688 /* TaskReducer.swift */; };
 		E45C7F062920BF8A003A0688 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7F052920BF8A003A0688 /* Action.swift */; };
 		E45C7F082920C074003A0688 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7F072920C074003A0688 /* AddTaskView.swift */; };
+		E45C7F0B2920C5FC003A0688 /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7F0A2920C5FC003A0688 /* LogMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E45C7F032920BEC9003A0688 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
 		E45C7F052920BF8A003A0688 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		E45C7F072920C074003A0688 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		E45C7F0A2920C5FC003A0688 /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		E45C7EF8291FB5E4003A0688 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				E45C7F092920C5EE003A0688 /* Middlewares */,
 				E45C7EFB291FE35C003A0688 /* Reducers */,
 				E45C7EF9291FB5F3003A0688 /* Store.swift */,
 				E45C7F052920BF8A003A0688 /* Action.swift */,
@@ -110,6 +113,14 @@
 				E45C7F012920BE64003A0688 /* Task.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E45C7F092920C5EE003A0688 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7F0A2920C5FC003A0688 /* LogMiddleware.swift */,
+			);
+			path = Middlewares;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			files = (
 				E45C7EFA291FB5F3003A0688 /* Store.swift in Sources */,
 				E45C7EFD291FE39B003A0688 /* CounterReducer.swift in Sources */,
+				E45C7F0B2920C5FC003A0688 /* LogMiddleware.swift in Sources */,
 				E45C7EED291FAF81003A0688 /* ContentView.swift in Sources */,
 				E45C7F082920C074003A0688 /* AddTaskView.swift in Sources */,
 				E45C7EEB291FAF81003A0688 /* HelloReduxApp.swift in Sources */,
