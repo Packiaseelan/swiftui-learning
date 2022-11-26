@@ -32,6 +32,17 @@
 		E4316808287EBB8800790BC1 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4316807287EBB8800790BC1 /* PreferenceKeyBootcamp.swift */; };
 		E431680B28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431680A28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift */; };
 		E431680D2880408800790BC1 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431680C2880408800790BC1 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
+		E43E00402930E46400031616 /* CloudKitPushNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E003F2930E46400031616 /* CloudKitPushNotificationBootcamp.swift */; };
+		E43E00422931DB7200031616 /* CloudKitPushNotificationBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E00412931DB7200031616 /* CloudKitPushNotificationBootcampViewModel.swift */; };
+		E43E00442931E16500031616 /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E00432931E16500031616 /* CloudKitUtility.swift */; };
+		E43E0047293211D800031616 /* UserFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E0046293211D800031616 /* UserFunctions.swift */; };
+		E43E00492932121300031616 /* CrudFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E00482932121300031616 /* CrudFunctions.swift */; };
+		E43E004B2932831300031616 /* PushNotificationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43E004A2932831300031616 /* PushNotificationFunctions.swift */; };
+		E44B8271292E0D3A00D755A3 /* CloudKitUserBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B8270292E0D3A00D755A3 /* CloudKitUserBootcampViewModel.swift */; };
+		E44B8274292E0F5E00D755A3 /* CloudKitCrudBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B8273292E0F5E00D755A3 /* CloudKitCrudBootcamp.swift */; };
+		E44B8277292E436C00D755A3 /* CloudKitCrudBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B8276292E436C00D755A3 /* CloudKitCrudBootcampViewModel.swift */; };
+		E44B827A292F0F4400D755A3 /* AdvancedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B8279292F0F4400D755A3 /* AdvancedListView.swift */; };
+		E44B827C292F0FAD00D755A3 /* CloudKitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B827B292F0FAD00D755A3 /* CloudKitListView.swift */; };
 		E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D692B28747AC200DF2713 /* RotationViewModifier.swift */; };
 		E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D69302874998B00DF2713 /* MatchedGeometryExample1.swift */; };
 		E44D693328749B1400DF2713 /* MatchedGeometryExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D693228749B1400DF2713 /* MatchedGeometryExample2.swift */; };
@@ -53,6 +64,7 @@
 		E49A51FB28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */; };
 		E4A134662909089C001AE824 /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */; };
 		E4A334D529215A810063FC0E /* FutureBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A334D429215A810063FC0E /* FutureBootcampViewModel.swift */; };
+		E4B22CDC292CBAB5002901E6 /* CloudKitUserBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B22CDB292CBAB5002901E6 /* CloudKitUserBootcamp.swift */; };
 		E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */; };
 		E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7681F290966E600C05D47 /* SignedInHomeView.swift */; };
 		E4D76822290996DB00C05D47 /* AdvancedCombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D76821290996DB00C05D47 /* AdvancedCombineBootcamp.swift */; };
@@ -107,6 +119,17 @@
 		E4316807287EBB8800790BC1 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		E431680A28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		E431680C2880408800790BC1 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
+		E43E003F2930E46400031616 /* CloudKitPushNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationBootcamp.swift; sourceTree = "<group>"; };
+		E43E00412931DB7200031616 /* CloudKitPushNotificationBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationBootcampViewModel.swift; sourceTree = "<group>"; };
+		E43E00432931E16500031616 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
+		E43E0046293211D800031616 /* UserFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFunctions.swift; sourceTree = "<group>"; };
+		E43E00482932121300031616 /* CrudFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudFunctions.swift; sourceTree = "<group>"; };
+		E43E004A2932831300031616 /* PushNotificationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationFunctions.swift; sourceTree = "<group>"; };
+		E44B8270292E0D3A00D755A3 /* CloudKitUserBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBootcampViewModel.swift; sourceTree = "<group>"; };
+		E44B8273292E0F5E00D755A3 /* CloudKitCrudBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrudBootcamp.swift; sourceTree = "<group>"; };
+		E44B8276292E436C00D755A3 /* CloudKitCrudBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrudBootcampViewModel.swift; sourceTree = "<group>"; };
+		E44B8279292F0F4400D755A3 /* AdvancedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedListView.swift; sourceTree = "<group>"; };
+		E44B827B292F0FAD00D755A3 /* CloudKitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitListView.swift; sourceTree = "<group>"; };
 		E44D692B28747AC200DF2713 /* RotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewModifier.swift; sourceTree = "<group>"; };
 		E44D69302874998B00DF2713 /* MatchedGeometryExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryExample1.swift; sourceTree = "<group>"; };
 		E44D693228749B1400DF2713 /* MatchedGeometryExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryExample2.swift; sourceTree = "<group>"; };
@@ -129,6 +152,8 @@
 		E49A51FA28D2F66A004D1282 /* UnitTestingBootcampViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel_Test.swift; sourceTree = "<group>"; };
 		E4A134652909089C001AE824 /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
 		E4A334D429215A810063FC0E /* FutureBootcampViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureBootcampViewModel.swift; sourceTree = "<group>"; };
+		E4B22CDB292CBAB5002901E6 /* CloudKitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBootcamp.swift; sourceTree = "<group>"; };
+		E4B22CDD292CBAEE002901E6 /* STALearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = STALearning.entitlements; sourceTree = "<group>"; };
 		E4D7681D29095CF200C05D47 /* UITestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampViewModel.swift; sourceTree = "<group>"; };
 		E4D7681F290966E600C05D47 /* SignedInHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInHomeView.swift; sourceTree = "<group>"; };
 		E4D76821290996DB00C05D47 /* AdvancedCombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineBootcamp.swift; sourceTree = "<group>"; };
@@ -218,8 +243,9 @@
 		E423C3512866BBA5001D3F0F /* STALearning */ = {
 			isa = PBXGroup;
 			children = (
+				E4B22CDD292CBAEE002901E6 /* STALearning.entitlements */,
 				E423C3522866BBA5001D3F0F /* STALearningApp.swift */,
-				E423C3652866C60C001D3F0F /* MainView.swift */,
+				E44B8278292F0F2000D755A3 /* MainView */,
 				E423C3622866C31B001D3F0F /* ViewModifiers */,
 				E423C3672866CB22001D3F0F /* ButtonStyle */,
 				E44D692A28747AA400DF2713 /* AnyTransition */,
@@ -237,6 +263,7 @@
 				E40E3E9D29065F57009C4C2A /* UITesting */,
 				E4D76823290996E200C05D47 /* AdvancedCombine */,
 				E45C7ED8291CB28F003A0688 /* Futures */,
+				E4B22CDA292CBA88002901E6 /* CloudKitBootcamp */,
 				E423C3562866BBA6001D3F0F /* Assets.xcassets */,
 				E423C3582866BBA6001D3F0F /* Preview Content */,
 			);
@@ -299,6 +326,26 @@
 			path = PreferenceKey;
 			sourceTree = "<group>";
 		};
+		E43E003E2930E43500031616 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				E43E003F2930E46400031616 /* CloudKitPushNotificationBootcamp.swift */,
+				E43E00412931DB7200031616 /* CloudKitPushNotificationBootcampViewModel.swift */,
+			);
+			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		E43E0045293211B300031616 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E43E00432931E16500031616 /* CloudKitUtility.swift */,
+				E43E00482932121300031616 /* CrudFunctions.swift */,
+				E43E0046293211D800031616 /* UserFunctions.swift */,
+				E43E004A2932831300031616 /* PushNotificationFunctions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		E440752F28B890330095F6AD /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +354,34 @@
 				E4DA6BDC28D82BDE003383D2 /* NewMockDataService.swift */,
 			);
 			path = UnitTesting;
+			sourceTree = "<group>";
+		};
+		E44B8272292E0D8C00D755A3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E4B22CDB292CBAB5002901E6 /* CloudKitUserBootcamp.swift */,
+				E44B8270292E0D3A00D755A3 /* CloudKitUserBootcampViewModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		E44B8275292E435900D755A3 /* Crud */ = {
+			isa = PBXGroup;
+			children = (
+				E44B8273292E0F5E00D755A3 /* CloudKitCrudBootcamp.swift */,
+				E44B8276292E436C00D755A3 /* CloudKitCrudBootcampViewModel.swift */,
+			);
+			path = Crud;
+			sourceTree = "<group>";
+		};
+		E44B8278292F0F2000D755A3 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E423C3652866C60C001D3F0F /* MainView.swift */,
+				E44B8279292F0F4400D755A3 /* AdvancedListView.swift */,
+				E44B827B292F0FAD00D755A3 /* CloudKitListView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		E44D692A28747AA400DF2713 /* AnyTransition */ = {
@@ -376,6 +451,17 @@
 				E4DA6BDE28D82C36003383D2 /* NewMockDataService_Test.swift */,
 			);
 			path = STALearning_Tests;
+			sourceTree = "<group>";
+		};
+		E4B22CDA292CBA88002901E6 /* CloudKitBootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				E43E0045293211B300031616 /* Utility */,
+				E44B8272292E0D8C00D755A3 /* User */,
+				E44B8275292E435900D755A3 /* Crud */,
+				E43E003E2930E43500031616 /* PushNotification */,
+			);
+			path = CloudKitBootcamp;
 			sourceTree = "<group>";
 		};
 		E4B4EB1D28B099E6008DBF8F /* CustomNavBar */ = {
@@ -548,6 +634,7 @@
 				E472CC4F28B322CF0005A364 /* CustomNavBarPreferenceKey.swift in Sources */,
 				E472CC5528B5EB080005A364 /* UIViewControllerRepresentableBootcamp.swift in Sources */,
 				E40BE528289D139100A429A0 /* CustomTabBArView.swift in Sources */,
+				E44B8274292E0F5E00D755A3 /* CloudKitCrudBootcamp.swift in Sources */,
 				E40BE526289CD63200A429A0 /* AppTabBarView.swift in Sources */,
 				E4A334D529215A810063FC0E /* FutureBootcampViewModel.swift in Sources */,
 				E4D7682529099C7400C05D47 /* AdvancedCombineDataService.swift in Sources */,
@@ -556,23 +643,30 @@
 				E40A2D2D28AE12CC0001EA1B /* TabBarItem.swift in Sources */,
 				E4316808287EBB8800790BC1 /* PreferenceKeyBootcamp.swift in Sources */,
 				E472CC4D28B270140005A364 /* CustomNavLink.swift in Sources */,
+				E44B8271292E0D3A00D755A3 /* CloudKitUserBootcampViewModel.swift in Sources */,
 				E423C3612866BC69001D3F0F /* ViewModifierBootcamp.swift in Sources */,
 				E423C3662866C60C001D3F0F /* MainView.swift in Sources */,
 				E4316804287E976900790BC1 /* ViewBuilderBootcamp.swift in Sources */,
+				E44B827C292F0FAD00D755A3 /* CloudKitListView.swift in Sources */,
+				E43E00492932121300031616 /* CrudFunctions.swift in Sources */,
 				E472CC4728B0C3870005A364 /* CustomNavBarContainerView.swift in Sources */,
 				E472CC5228B364B20005A364 /* UIViewRepresentableBootcamp.swift in Sources */,
+				E43E004B2932831300031616 /* PushNotificationFunctions.swift in Sources */,
 				E472CC4B28B1F3B40005A364 /* CustomNavView.swift in Sources */,
+				E43E00402930E46400031616 /* CloudKitPushNotificationBootcamp.swift in Sources */,
 				E431680B28803D3500790BC1 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				E44D69312874998B00DF2713 /* MatchedGeometryExample1.swift in Sources */,
 				E472CC5828B639670005A364 /* ProtocolsBootcamp.swift in Sources */,
 				E4D76820290966E600C05D47 /* SignedInHomeView.swift in Sources */,
 				E40E3E9F29065F77009C4C2A /* UITestingBootcampView.swift in Sources */,
+				E43E00422931DB7200031616 /* CloudKitPushNotificationBootcampViewModel.swift in Sources */,
 				E4D7682729099CA700C05D47 /* AdvancedCombineBootcampViewModel.swift in Sources */,
 				E4316802287C3C5900790BC1 /* GenericsBootcamp.swift in Sources */,
 				E40A2D2928AE00660001EA1B /* CustomTabBarContainerView.swift in Sources */,
 				E49A51EA28D2F187004D1282 /* UnitTestingBootcampView.swift in Sources */,
 				E4D7681E29095CF200C05D47 /* UITestingBootcampViewModel.swift in Sources */,
 				E49A51EC28D2F2EB004D1282 /* UnitTestingBootcampViewModel.swift in Sources */,
+				E4B22CDC292CBAB5002901E6 /* CloudKitUserBootcamp.swift in Sources */,
 				E4D76822290996DB00C05D47 /* AdvancedCombineBootcamp.swift in Sources */,
 				E43167FF287C011800790BC1 /* AnimatableDataBootcamp.swift in Sources */,
 				E40A2D2B28AE0E8C0001EA1B /* TabBarItemsPreferenceKey.swift in Sources */,
@@ -580,11 +674,15 @@
 				E423C36D2866D387001D3F0F /* AnyTransitionBootcamp.swift in Sources */,
 				E4316806287EA7F800790BC1 /* LocalViewBuilderBootcamp.swift in Sources */,
 				E423C3642866C344001D3F0F /* DefaultButtonViewModifier.swift in Sources */,
+				E43E0047293211D800031616 /* UserFunctions.swift in Sources */,
+				E44B8277292E436C00D755A3 /* CloudKitCrudBootcampViewModel.swift in Sources */,
 				E423C3532866BBA5001D3F0F /* STALearningApp.swift in Sources */,
 				E45C7EDA291CB36B003A0688 /* FuturesBootcamp.swift in Sources */,
 				E423C3692866CB3F001D3F0F /* PressableButtonStyle.swift in Sources */,
+				E43E00442931E16500031616 /* CloudKitUtility.swift in Sources */,
 				E44D692C28747AC200DF2713 /* RotationViewModifier.swift in Sources */,
 				E472CC4528B0B2FF0005A364 /* CustomNavBarView.swift in Sources */,
+				E44B827A292F0F4400D755A3 /* AdvancedListView.swift in Sources */,
 				E472CC5B28B755F10005A364 /* DependencyInjectionBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,10 +870,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = STALearning/STALearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STALearning/Preview Content\"";
-				DEVELOPMENT_TEAM = BQH36CFX55;
+				DEVELOPMENT_TEAM = YMD7CAPGMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -788,7 +887,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.STALearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.uatapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -801,10 +900,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = STALearning/STALearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STALearning/Preview Content\"";
-				DEVELOPMENT_TEAM = BQH36CFX55;
+				DEVELOPMENT_TEAM = YMD7CAPGMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -817,7 +917,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.STALearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexcreators.uatapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
