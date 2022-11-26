@@ -33,7 +33,9 @@ class FuturesBootcampViewModel: ObservableObject {
         getFuturePublisher()
             .sink { _ in
             } receiveValue: { [weak self] returnedValue in
-                self?.title = returnedValue
+                DispatchQueue.main.async {
+                    self?.title = returnedValue
+                }
             }
             .store(in: &cancellables)
     }
