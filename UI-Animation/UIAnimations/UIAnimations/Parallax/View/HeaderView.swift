@@ -48,15 +48,3 @@ extension HeaderView {
     }
     private func onShare() {}
 }
-
-struct IconButton: View {
-    let iconName: String
-    let action: () -> ()
-    
-    var body: some View {
-        Button(action: action) {
-            Image(systemName: iconName)
-                .font(.title2)
-        }
-    }
-}
