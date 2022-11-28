@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ParallaxHomeView: View {
     @State var firstMinY: CGFloat = 0
     
     // Stopping Bounces on ScrollView
@@ -54,6 +54,6 @@ let subTitles = ["Subtitle 1", "Subtitle 2", "Subtitle 3"]
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ParallaxHomeView()
     }
 }

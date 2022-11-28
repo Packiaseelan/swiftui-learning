@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section("Parallax") {
-                    NavigationLink("Scroll", destination: HomeView())
+                    NavigationLink("Scroll", destination: ParallaxHomeView())
                 }
             }
             .listStyle(GroupedListStyle())
