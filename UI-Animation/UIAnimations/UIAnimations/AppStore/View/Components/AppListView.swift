@@ -12,11 +12,11 @@ struct AppListView: View {
     @Binding var apps: [AppItem]
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
-                ForEach(apps) {
-                    AppItemCard(item: $0)
-                }
+        VStack(alignment: .leading) {
+            SubTitleView(title: "Suggested")
+            
+            ForEach(apps) {
+                AppItemCard(item: $0)
             }
         }
     }

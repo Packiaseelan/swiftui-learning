@@ -13,7 +13,8 @@ struct AppStoreSearchView: View {
     
     var body: some View {
         SearchNavigationView(
-            view: AnyView(AppListView(apps: $apps)),
+            view: AnyView(searchBody),
+            placeHolder: "Games, Apps, Stories and More",
             title: "Search",
             onSearch: onSearch,
             onCancel: onCancel)
@@ -24,6 +25,17 @@ struct AppStoreSearchView: View {
 struct AppStoreSearchView_Previews: PreviewProvider {
     static var previews: some View {
         AppStoreSearchView()
+    }
+}
+
+extension AppStoreSearchView {
+    private var searchBody: some View {
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading) {
+                DiscoverView()
+                AppListView(apps: $apps)
+            }
+        }
     }
 }
 

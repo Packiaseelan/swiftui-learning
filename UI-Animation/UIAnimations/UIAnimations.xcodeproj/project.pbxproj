@@ -30,6 +30,8 @@
 		E4503A5A292281E600A81943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4503A59292281E600A81943 /* ContentView.swift */; };
 		E4503A5C292281E600A81943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4503A5B292281E600A81943 /* Assets.xcassets */; };
 		E4503A5F292281E600A81943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4503A5E292281E600A81943 /* Preview Assets.xcassets */; };
+		E48F22742935B748006BFCD5 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F22732935B748006BFCD5 /* DiscoverView.swift */; };
+		E48F22762935B849006BFCD5 /* SubTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F22752935B849006BFCD5 /* SubTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		E4503A59292281E600A81943 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4503A5B292281E600A81943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4503A5E292281E600A81943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E48F22732935B748006BFCD5 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		E48F22752935B849006BFCD5 /* SubTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,7 @@
 		E400BBBD29349B4900AD3B96 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E400BBE429354CBF00AD3B96 /* Apps */,
+				E400BBE429354CBF00AD3B96 /* Components */,
 				E400BBD92935302B00AD3B96 /* Search */,
 				E400BBBE29349B5A00AD3B96 /* AppStoreHomeView.swift */,
 				E400BBD02934D21500AD3B96 /* AppStoreArcadeView.swift */,
@@ -165,13 +169,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E400BBE429354CBF00AD3B96 /* Apps */ = {
+		E400BBE429354CBF00AD3B96 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				E400BBE529354CD000AD3B96 /* AppListView.swift */,
+				E48F22752935B849006BFCD5 /* SubTitleView.swift */,
+				E48F22732935B748006BFCD5 /* DiscoverView.swift */,
 				E400BBE72935501200AD3B96 /* AppItemCard.swift */,
 			);
-			path = Apps;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E4503A4B292281E600A81943 = {
@@ -295,6 +301,8 @@
 				E4503A58292281E600A81943 /* UIAnimationsApp.swift in Sources */,
 				E400BBC82934CCE700AD3B96 /* AppStoreHeaderView.swift in Sources */,
 				E400BBD12934D21500AD3B96 /* AppStoreArcadeView.swift in Sources */,
+				E48F22742935B748006BFCD5 /* DiscoverView.swift in Sources */,
+				E48F22762935B849006BFCD5 /* SubTitleView.swift in Sources */,
 				E400BBB529337F3C00AD3B96 /* HeaderView.swift in Sources */,
 				E400BBC62934CCB200AD3B96 /* TodayView.swift in Sources */,
 				E400BBCB2934CEC100AD3B96 /* DateUtility.swift in Sources */,

@@ -15,17 +15,17 @@ struct ContentView: View {
         NavigationView {
             TabView(selection: $selection) {
                 UIAnimationView()
-                    .tabItem { Text("Animation") }
+                    .tabItem { Label("Animation", systemImage: "app.dashed") }
                     .tag(1)
                 
                 MiniAppsView()
-                    .tabItem { Text("MiniApps") }
+                    .tabItem { Label("MiniApps", systemImage: "app") }
                     .tag(2)
             }
             .navigationTitle(getTitle())
             .navigationBarItems(
-                leading: IconButton(iconName: "line.3.horizontal", action: {}, font: .caption),
-                trailing: IconButton(iconName: "gear", action: {}, font: .caption)
+                leading: IconButton(iconName: "line.3.horizontal", action: onMenuClick, font: .caption),
+                trailing: IconButton(iconName: "gear", action: onSettingsClick, font: .caption)
             )
             .foregroundColor(.primary)
         }
@@ -39,6 +39,11 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 extension ContentView {
+    
+    private func onMenuClick() {}
+    
+    private func onSettingsClick() {}
+    
     private func getTitle() -> String {
         switch selection {
         case 1:
