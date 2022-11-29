@@ -20,9 +20,10 @@ struct SearchNavigationView: UIViewControllerRepresentable {
     // onSearch and onCancel closures
     var onSearch: (String) -> ()
     var onCancel: () -> ()
+    var onFocusChange: (Bool) -> ()
     
     // required Closure on Call
-    init(view: AnyView, placeHolder: String? = "Search", largeTitle: Bool? = true, title: String, onSearch: @escaping (String) -> (), onCancel: @escaping () -> ()) {
+    init(view: AnyView, placeHolder: String? = "Search", largeTitle: Bool? = true, title: String, onSearch: @escaping (String) -> (), onCancel: @escaping () -> (), onFocusChange: @escaping (Bool) -> ()) {
         
         self.title = title
         self.largeTitle = largeTitle!
@@ -30,6 +31,7 @@ struct SearchNavigationView: UIViewControllerRepresentable {
         self.view = view
         self.onSearch = onSearch
         self.onCancel = onCancel
+        self.onFocusChange = onFocusChange
     }
     
     func makeCoordinator() -> Coordinator {
@@ -89,6 +91,16 @@ struct SearchNavigationView: UIViewControllerRepresentable {
         func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
             // when cancel button is clicked
             self.parent.onCancel()
+        }
+        
+        func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+            self.parent.onFocusChange(true)
+            return true
+        }
+        
+        func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+            self.parent.onFocusChange(false)
+            return true
         }
     }
 }

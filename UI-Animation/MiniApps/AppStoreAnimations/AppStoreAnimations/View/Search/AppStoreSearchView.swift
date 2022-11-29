@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AppStoreSearchView: View {
     
-    @State var apps: [AppItem] = tempApps
+    @State private var apps: [AppItem] = tempApps
+    @State private var showDiscover: Bool = true
     
     var body: some View {
         SearchNavigationView(
@@ -17,7 +18,8 @@ struct AppStoreSearchView: View {
             placeHolder: "Games, Apps, Stories and More",
             title: "Search",
             onSearch: onSearch,
-            onCancel: onCancel)
+            onCancel: onCancel,
+            onFocusChange: onFocusChange)
         .ignoresSafeArea()
     }
 }
@@ -29,10 +31,15 @@ struct AppStoreSearchView_Previews: PreviewProvider {
 }
 
 extension AppStoreSearchView {
+    
+    private var appList: some View {
+        AppListView(apps: $apps)
+    }
+    
     private var searchBody: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
-                DiscoverView()
+                DiscoverView(show: $showDiscover)
                 AppListView(apps: $apps)
             }
         }
@@ -52,5 +59,9 @@ extension AppStoreSearchView {
     
     private func onCancel() {
         self.apps = tempApps
+    }
+    
+    private func onFocusChange(hasFocus: Bool) {
+        self.showDiscover = !hasFocus
     }
 }
