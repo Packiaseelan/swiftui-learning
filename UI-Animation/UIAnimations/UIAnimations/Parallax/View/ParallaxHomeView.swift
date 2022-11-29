@@ -50,7 +50,7 @@ struct ParallaxHomeView: View {
     }
 }
 
-let subTitles = ["Subtitle 1", "Subtitle 2", "Subtitle 3"]
+let subTitles = ["Subtitle 1", "Subtitle 2", "Subtitle 3", "SubTitle 4", "SubTitle 5"]
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

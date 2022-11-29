@@ -17,10 +17,6 @@ struct ContentView: View {
                 UIAnimationView()
                     .tabItem { Label("Animation", systemImage: "app.dashed") }
                     .tag(1)
-                
-                MiniAppsView()
-                    .tabItem { Label("MiniApps", systemImage: "app") }
-                    .tag(2)
             }
             .navigationTitle(getTitle())
             .navigationBarItems(
@@ -48,8 +44,6 @@ extension ContentView {
         switch selection {
         case 1:
             return "UI Animation"
-        case 2:
-            return "Mini Apps"
         default:
             return ""
         }

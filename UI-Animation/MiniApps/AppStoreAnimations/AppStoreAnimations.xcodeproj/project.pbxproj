@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E48F22842935C494006BFCD5 /* AppStoreAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F22832935C494006BFCD5 /* AppStoreAnimationsApp.swift */; };
-		E48F22862935C494006BFCD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F22852935C494006BFCD5 /* ContentView.swift */; };
 		E48F22882935C495006BFCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48F22872935C495006BFCD5 /* Assets.xcassets */; };
 		E48F228B2935C495006BFCD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48F228A2935C495006BFCD5 /* Preview Assets.xcassets */; };
 		E48F22932935C53B006BFCD5 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F22922935C53B006BFCD5 /* AppItem.swift */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		E48F22802935C494006BFCD5 /* AppStoreAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48F22832935C494006BFCD5 /* AppStoreAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimationsApp.swift; sourceTree = "<group>"; };
-		E48F22852935C494006BFCD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E48F22872935C495006BFCD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48F228A2935C495006BFCD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E48F22922935C53B006BFCD5 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				E48F22832935C494006BFCD5 /* AppStoreAnimationsApp.swift */,
-				E48F22852935C494006BFCD5 /* ContentView.swift */,
 				E48F22982935C5E0006BFCD5 /* Components */,
 				E48F22952935C5AE006BFCD5 /* Utilities */,
 				E48F22912935C52D006BFCD5 /* Model */,
@@ -233,7 +230,6 @@
 				E48F22B52935C7F2006BFCD5 /* AppStoreTodayView.swift in Sources */,
 				E48F22B32935C7D8006BFCD5 /* AppStoreGamesView.swift in Sources */,
 				E48F229C2935C62D006BFCD5 /* SubTitleView.swift in Sources */,
-				E48F22862935C494006BFCD5 /* ContentView.swift in Sources */,
 				E48F22AF2935C79E006BFCD5 /* AppStoreHeaderView.swift in Sources */,
 				E48F229E2935C674006BFCD5 /* DiscoverView.swift in Sources */,
 				E48F229A2935C5E9006BFCD5 /* IconButton.swift in Sources */,
