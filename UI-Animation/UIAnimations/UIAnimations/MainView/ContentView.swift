@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selection = 1
+    @State private var selection = 1
     
     var body: some View {
         NavigationView {
@@ -18,10 +18,10 @@ struct ContentView: View {
                     .tabItem { Label("Animation", systemImage: "app.dashed") }
                     .tag(1)
             }
-            .navigationTitle(getTitle())
+            .navigationTitle(title)
             .navigationBarItems(
-                leading: IconButton(iconName: "line.3.horizontal", action: onMenuClick, font: .caption),
-                trailing: IconButton(iconName: "gear", action: onSettingsClick, font: .caption)
+                leading: menu,
+                trailing: settings
             )
             .foregroundColor(.primary)
         }
@@ -36,16 +36,30 @@ struct ContentView_Previews: PreviewProvider {
 
 extension ContentView {
     
+    private var menu: some View {
+        IconButton(iconName: "line.3.horizontal", action: onMenuClick, font: .caption)
+    }
+    
+    private var settings: some View {
+        IconButton(iconName: "gear", action: onSettingsClick, font: .caption)
+    }
+    
+}
+
+extension ContentView {
+    
     private func onMenuClick() {}
     
     private func onSettingsClick() {}
     
-    private func getTitle() -> String {
-        switch selection {
-        case 1:
-            return "UI Animation"
-        default:
-            return ""
+    private var title: String {
+        get {
+            switch selection {
+            case 1:
+                return "UI Animation"
+            default:
+                return ""
+            }
         }
     }
 }

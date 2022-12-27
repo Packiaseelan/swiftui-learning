@@ -23,7 +23,7 @@ struct ParallaxHomeView: View {
         VStack(spacing: 0) {
             HeaderView()
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 // Top Sticky View
                 StickyView(firstMinY: $firstMinY, minY: $minY, lastMinY: $lastMinY, scale: $scale)
                 
