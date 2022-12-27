@@ -25,6 +25,18 @@ class TodayViewModel: ObservableObject {
         fetchItems()
     }
     
+    func showDetails(startPoint: CGRect) {
+        showDetails = true
+        detailsStartPoint = startPoint
+    }
+    
+    func onCloseDetails() {
+        detailsWillHide = true
+        detailsStartPoint = detailsReturnPoint
+        showDetails = false
+        detailsWillHide = false
+    }
+    
     private func fetchItems() {
         items = todayItems
     }

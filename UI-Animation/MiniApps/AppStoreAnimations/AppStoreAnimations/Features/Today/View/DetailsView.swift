@@ -19,13 +19,12 @@ struct DetailsView: View {
             if let item = vm.selectedItem {
                 ZStack {
                     ScrollView(showsIndicators: false) {
-                        VStack(spacing:0) {
-                            ZStack{
+                        VStack(alignment: .leading, spacing:0) {
+                            ZStack(alignment: .leading) {
                                 buildImage(image: item.image)
                                 buildDetail(item: item)
                             }
                             .frame(height: vm.itemHeight)
-                            .zIndex(1)
                             Text(item.description)
                                 .padding()
                                 .frame(maxHeight: vm.showDetails ? .infinity : 0)
@@ -77,8 +76,8 @@ extension DetailsView {
     
     private var closeButton: some View {
         Button(action: onClose) { closeIcon }
-            .offset(x: (UIScreen.main.bounds.width/2) - 30,
-                    y: (-1 * UIScreen.main.bounds.height/2) + 60)
+            .offset(x: (screenWidth / 2) - 30,
+                    y: (-1 * screenHeight / 2) + 60)
     }
 }
 
@@ -90,7 +89,7 @@ extension DetailsView {
             .resizable()
             .scaledToFill()
             .frame(
-                width: vm.showDetails ? UIScreen.main.bounds.width : vm.SVWidth,
+                width: vm.showDetails ? screenWidth : vm.SVWidth,
                 height:vm.itemHeight
             )
             .clipped()
@@ -114,8 +113,8 @@ extension DetailsView {
             .offset(y:vm.showDetails ? 44 : 0)
             Spacer()
             
-            Text("\(item.description)")
-                .lineLimit(2)
+            Text("\(item.shortDescription)")
+                .lineLimit(1)
                 .font(.headline)
                 .fontWeight(.bold)
                 .foregroundColor(.init(white: 0.9)).opacity(0.8)
@@ -129,13 +128,8 @@ extension DetailsView {
 extension DetailsView {
     
     private func onClose() {
-        vm.detailsWillHide = true
-        vm.detailsStartPoint = vm.detailsReturnPoint
-        vm.showDetails = false
-        Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false, block: hideDetails)
-    }
-    
-    private func hideDetails(timer: Timer) {
-        vm.detailsWillHide = false
+        withAnimation(.easeInOut(duration: 0.6)) {
+            vm.onCloseDetails()
+        }
     }
 }

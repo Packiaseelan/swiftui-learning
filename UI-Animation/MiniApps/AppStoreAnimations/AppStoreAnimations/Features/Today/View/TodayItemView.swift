@@ -16,7 +16,7 @@ struct TodayItemView: View {
     var body: some View {
         GeometryReader { geo -> AnyView in
             AnyView(
-                ZStack {
+                ZStack(alignment: .leading) {
                     bgImage
                     detail
                 }
@@ -31,6 +31,7 @@ struct TodayItemView: View {
         .frame(height: today.itemHeight)
         .padding(.horizontal, 20)
         .padding(.bottom, 20)
+        
     }
 }
 
@@ -66,14 +67,13 @@ extension TodayItemView {
             Spacer()
             
             Text(item.shortDescription)
-                .lineLimit(2)
+                .lineLimit(1)
                 .font(.headline)
                 .fontWeight(.bold)
                 .foregroundColor(.init(white: 0.9)).opacity(0.8)
+                
         }
-        .multilineTextAlignment(.leading)
         .padding()
-        .frame(width: today.SVWidth)
     }
 }
 
@@ -89,11 +89,13 @@ extension TodayItemView {
         today.detailsReturnPoint = thisRect
         today.detailsStartPoint = thisRect
         
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: showDetails)
+        showDetails()
     }
     
-    private func showDetails(timer: Timer) {
-        today.showDetails = true
-        today.detailsStartPoint = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+    private func showDetails() {
+        let startPoint = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+        withAnimation(.spring(response: 0.55, dampingFraction: 1)) {
+            today.showDetails(startPoint: startPoint)
+        }
     }
 }

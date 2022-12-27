@@ -57,6 +57,8 @@
 		E42CAEED29451B9300F8B12A /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E42CAEEF29451C5A00F8B12A /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		E42CAEF129451CA700F8B12A /* AppStoreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreHeaderView.swift; sourceTree = "<group>"; };
+		E42CAEF32945205300F8B12A /* hex-translator-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "hex-translator-swift"; path = "../../../../../../../source-control/gitlab/hex-products/hex-translator/front-end/mobile/hex-translator-swift"; sourceTree = "<group>"; };
+		E4699E51295B1D1E00C6565E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E42CAEA829444C0400F8B12A /* AppStoreAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				E4699E51295B1D1E00C6565E /* Info.plist */,
 				E42CAEA929444C0400F8B12A /* AppStoreAnimationsApp.swift */,
 				E42CAECF2944C2C000F8B12A /* Components */,
 				E42CAECE2944A44600F8B12A /* Utilities */,
@@ -104,6 +107,7 @@
 		E42CAEAF29444C0500F8B12A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E42CAEF32945205300F8B12A /* hex-translator-swift */,
 				E42CAEB029444C0500F8B12A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -426,7 +430,7 @@
 				DEVELOPMENT_TEAM = BQH36CFX55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AppStoreAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -455,7 +459,7 @@
 				DEVELOPMENT_TEAM = BQH36CFX55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AppStoreAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
