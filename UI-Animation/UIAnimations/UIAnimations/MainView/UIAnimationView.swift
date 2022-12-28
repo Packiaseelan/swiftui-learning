@@ -12,6 +12,7 @@ struct UIAnimationView: View {
         List {
             Section {
                 NavigationLink("Parallax Scroll", destination: ParallaxHomeView())
+                NavigationLink("Rating", destination: AnimatedRatingShapes())
             }
         }
         .listStyle(GroupedListStyle())
