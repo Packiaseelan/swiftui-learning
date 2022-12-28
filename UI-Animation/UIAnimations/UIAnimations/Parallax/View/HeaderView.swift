@@ -12,15 +12,14 @@ struct HeaderView: View {
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
-        // headerView
         HStack {
-            IconButton(iconName: "arrow.backward", action: onBack)
+            backButton
             Spacer()
-            IconButton(iconName: "square.and.arrow.up", action: onShare)
+            shareButton
         }
         .padding()
         .overlay(title)
-        .padding(.top, getSafeAreaTopInsects())
+        .padding(.top, safeAreaTopInsects)
         .background(Color("ParallaxAppBgColor"))
         .foregroundColor(Color("ParallaxAppTextColor"))
     }
@@ -34,6 +33,14 @@ struct HeaderView_Previews: PreviewProvider {
 }
 
 extension HeaderView {
+    private var backButton: some View {
+        IconButton(iconName: "arrow.backward", action: onBack)
+    }
+    
+    private var shareButton: some View {
+        IconButton(iconName: "square.and.arrow.up", action: onShare)
+    }
+    
     private var title: some View {
         Text("Tiger")
             .font(.title2)

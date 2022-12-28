@@ -14,10 +14,6 @@ struct StickyView: View {
     @Binding var lastMinY: CGFloat
     @Binding var scale: CGFloat
     
-    func getScreen() -> CGRect{
-        UIScreen.main.bounds
-    }
-
     var body: some View {
         ZStack {
             Color.black
@@ -59,7 +55,7 @@ struct StickyView: View {
                     Image("p5")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: getScreen().width, height: getScreen().height - firstMinY)
+                        .frame(width: screenWidth, height: screenHeight - firstMinY)
                         .cornerRadius(1)
                         .scaleEffect(scale < 0.6 ? imageScale : 1)
                         .offset(y: scale < 0.6 ? imageOffset : 0)
@@ -83,14 +79,7 @@ struct StickyView: View {
                                 .opacity(Double(scale - 0.7) / 0.3)
                                 Spacer()
                                 // Showing Info Details
-                                Text("The Tiger lies\nlow not from fear,\nbut for aim.")
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color("ParallaxAppTextColor"))
-                                    .scaleEffect(1.5)
-                                    .opacity(0.1 - Double(scale - 0.7) / 0.3)
-                                    .multilineTextAlignment(.center)
-                                    .padding(.top, 400)
+                                infoDetails
                             }
                         )
                         .background(backgroundFrame)
@@ -102,7 +91,7 @@ struct StickyView: View {
                         .offset(y: scale > 0.6 ? (scale - 1) * 200 : -80)
                 )
             }
-            .frame(width: getScreen().width, height: getScreen().height - firstMinY)
+            .frame(width: screenWidth, height: screenHeight - firstMinY)
             .overlay(
                 // Bottom Details
                 VStack {
@@ -134,12 +123,12 @@ struct StickyView: View {
     }
 }
 
-//struct StickyView_Previews: PreviewProvider {
-//    static let val:  Binding<CGFloat> = .constant(250)
-//    static var previews: some View {
-//        StickyView(firstMinY: val, minY: val, lastMinY: val, scale: val)
-//    }
-//}
+struct StickyView_Previews: PreviewProvider {
+    static let val:  Binding<CGFloat> = .constant(250)
+    static var previews: some View {
+        StickyView(firstMinY: val, minY: val, lastMinY: val, scale: val)
+    }
+}
 
 extension StickyView {
     private var backgroundFrame: some View {
@@ -170,5 +159,16 @@ extension StickyView {
                 }
             }
         }
+    }
+    
+    private var infoDetails: some View {
+        Text("The Tiger lies\nlow not from fear,\nbut for aim.")
+            .font(.headline)
+            .fontWeight(.bold)
+            .foregroundColor(Color("ParallaxAppTextColor"))
+            .scaleEffect(1.5)
+            .opacity(0.1 - Double(scale - 0.7) / 0.3)
+            .multilineTextAlignment(.center)
+            .padding(.top, 400)
     }
 }
