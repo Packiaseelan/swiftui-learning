@@ -54,6 +54,18 @@ extension Color {
         endPoint: .trailing
     )
     
+    static let addWhite = LinearGradient(
+        gradient: Gradient (colors: [Color("Add White 1"), Color("Add White 2")]),
+        startPoint: .topLeading,
+        endPoint: .bottom
+    )
+    
+    static let addGray = LinearGradient(
+        gradient: Gradient (colors: [.black.opacity(0.4), .white.opacity(0.4)]),
+        startPoint: .topLeading,
+        endPoint: .bottom
+    )
+    
     static let tabBarBorder = Color("Tab Bar Border") .opacity(0.5)
     
     static let forecastCardBackground = Color ("Forecast Card Background" )

@@ -54,13 +54,14 @@ struct HomeView: View {
                         VStack {
                             Text(attributedString)
                             
-                            Text("H:24° L:18°")
+                            Text("H:24°  L:18°")
                                 .font(.title3.weight(.semibold))
                                 .opacity(1 - bottomSheetTranslationProrated)
                         }
                         
                         Spacer()
                     }
+                    .multilineTextAlignment(.center)
                     .padding(.top, 51)
                     .offset(y: -bottomSheetTranslationProrated * 46)
                     
@@ -80,7 +81,7 @@ struct HomeView: View {
                     TabBar(action: {
                         bottomSheetPosition = .top
                     })
-                    .offset(y: bottomSheetTranslationProrated * 115)
+                    .offset(y: bottomSheetTranslationProrated * 135)
                 }
             }
             .navigationBarHidden(true)
