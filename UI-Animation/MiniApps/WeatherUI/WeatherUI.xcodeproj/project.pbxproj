@@ -24,6 +24,8 @@
 		E46AC75A295CC91C004B6A21 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AC759295CC91C004B6A21 /* NavigationBar.swift */; };
 		E46AC75C295CCBA2004B6A21 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AC75B295CCBA2004B6A21 /* WeatherView.swift */; };
 		E4CF8AD3295D60F400CD7077 /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF8AD2295D60F400CD7077 /* WeatherWidget.swift */; };
+		E4CF8AD6295DC60300CD7077 /* ForecastWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF8AD5295DC60300CD7077 /* ForecastWidgets.swift */; };
+		E4CF8AD8295DC8BF00CD7077 /* ForecastTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF8AD7295DC8BF00CD7077 /* ForecastTile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		E46AC75B295CCBA2004B6A21 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		E4CF8AD2295D60F400CD7077 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		E4CF8AD4295D6A2400CD7077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4CF8AD5295DC60300CD7077 /* ForecastWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWidgets.swift; sourceTree = "<group>"; };
+		E4CF8AD7295DC8BF00CD7077 /* ForecastTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				E46AC753295C90F0004B6A21 /* SegmentedControl.swift */,
 				E46AC757295CA2BF004B6A21 /* ForecastCard.swift */,
 				E4CF8AD2295D60F400CD7077 /* WeatherWidget.swift */,
+				E4CF8AD5295DC60300CD7077 /* ForecastWidgets.swift */,
+				E4CF8AD7295DC8BF00CD7077 /* ForecastTile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -241,12 +247,14 @@
 			files = (
 				E4CF8AD3295D60F400CD7077 /* WeatherWidget.swift in Sources */,
 				E46AC758295CA2BF004B6A21 /* ForecastCard.swift in Sources */,
+				E4CF8AD8295DC8BF00CD7077 /* ForecastTile.swift in Sources */,
 				E46AC732295C6314004B6A21 /* ContentView.swift in Sources */,
 				E46AC754295C90F0004B6A21 /* SegmentedControl.swift in Sources */,
 				E46AC747295C690B004B6A21 /* HomeView.swift in Sources */,
 				E46AC752295C7F14004B6A21 /* Blur.swift in Sources */,
 				E46AC75C295CCBA2004B6A21 /* WeatherView.swift in Sources */,
 				E46AC745295C65F9004B6A21 /* Extensions.swift in Sources */,
+				E4CF8AD6295DC60300CD7077 /* ForecastWidgets.swift in Sources */,
 				E46AC730295C6314004B6A21 /* WeatherUIApp.swift in Sources */,
 				E46AC750295C7BDC004B6A21 /* ForecastView.swift in Sources */,
 				E46AC749295C6F96004B6A21 /* TabBar.swift in Sources */,
