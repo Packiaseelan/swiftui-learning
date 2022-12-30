@@ -25,7 +25,7 @@
 		E4B94BA0295EBCAE0037E808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4B94BA7295EBD7B0037E808 /* XOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOButton.swift; sourceTree = "<group>"; };
 		E4B94BA9295EC8A70037E808 /* GameUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
-		E4B94BAC295ED00B0037E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4B94BAC295ED00B0037E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B94BAE295EE6B60037E808 /* DetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCard.swift; sourceTree = "<group>"; };
 		E4B94BB1295F45810037E808 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,8 +60,7 @@
 		E4B94B98295EBCAD0037E808 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				E4B94BAC295ED00B0037E808 /* Info.plist */,
-				E4B94B99295EBCAD0037E808 /* TicTacToeApp.swift */,
+				E4B94BB4295F4BAE0037E808 /* App */,
 				E4B94BB3295F45A40037E808 /* Utils */,
 				E4B94BAB295ECFD50037E808 /* View */,
 				E4B94BB0295F45700037E808 /* ViewModel */,
@@ -111,6 +110,15 @@
 				E4B94BA9295EC8A70037E808 /* GameUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E4B94BB4295F4BAE0037E808 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E4B94BAC295ED00B0037E808 /* Info.plist */,
+				E4B94B99295EBCAD0037E808 /* TicTacToeApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
