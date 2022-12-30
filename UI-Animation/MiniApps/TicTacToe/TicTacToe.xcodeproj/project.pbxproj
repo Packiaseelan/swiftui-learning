@@ -12,8 +12,9 @@
 		E4B94B9E295EBCAE0037E808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B94B9D295EBCAE0037E808 /* Assets.xcassets */; };
 		E4B94BA1295EBCAE0037E808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B94BA0295EBCAE0037E808 /* Preview Assets.xcassets */; };
 		E4B94BA8295EBD7B0037E808 /* XOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94BA7295EBD7B0037E808 /* XOButton.swift */; };
-		E4B94BAA295EC8A80037E808 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94BA9295EC8A70037E808 /* Utils.swift */; };
+		E4B94BAA295EC8A80037E808 /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94BA9295EC8A70037E808 /* GameUtils.swift */; };
 		E4B94BAF295EE6B60037E808 /* DetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94BAE295EE6B60037E808 /* DetailsCard.swift */; };
+		E4B94BB2295F45810037E808 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94BB1295F45810037E808 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +24,10 @@
 		E4B94B9D295EBCAE0037E808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B94BA0295EBCAE0037E808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4B94BA7295EBD7B0037E808 /* XOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOButton.swift; sourceTree = "<group>"; };
-		E4B94BA9295EC8A70037E808 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E4B94BA9295EC8A70037E808 /* GameUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
 		E4B94BAC295ED00B0037E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E4B94BAE295EE6B60037E808 /* DetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCard.swift; sourceTree = "<group>"; };
+		E4B94BB1295F45810037E808 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 			children = (
 				E4B94BAC295ED00B0037E808 /* Info.plist */,
 				E4B94B99295EBCAD0037E808 /* TicTacToeApp.swift */,
-				E4B94BA9295EC8A70037E808 /* Utils.swift */,
+				E4B94BB3295F45A40037E808 /* Utils */,
 				E4B94BAB295ECFD50037E808 /* View */,
+				E4B94BB0295F45700037E808 /* ViewModel */,
 				E4B94B9D295EBCAE0037E808 /* Assets.xcassets */,
 				E4B94B9F295EBCAE0037E808 /* Preview Content */,
 			);
@@ -92,6 +95,22 @@
 				E4B94BAE295EE6B60037E808 /* DetailsCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E4B94BB0295F45700037E808 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4B94BB1295F45810037E808 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4B94BB3295F45A40037E808 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E4B94BA9295EC8A70037E808 /* GameUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +185,10 @@
 			files = (
 				E4B94B9C295EBCAD0037E808 /* ContentView.swift in Sources */,
 				E4B94B9A295EBCAD0037E808 /* TicTacToeApp.swift in Sources */,
+				E4B94BB2295F45810037E808 /* ContentViewModel.swift in Sources */,
 				E4B94BA8295EBD7B0037E808 /* XOButton.swift in Sources */,
 				E4B94BAF295EE6B60037E808 /* DetailsCard.swift in Sources */,
-				E4B94BAA295EC8A80037E808 /* Utils.swift in Sources */,
+				E4B94BAA295EC8A80037E808 /* GameUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
