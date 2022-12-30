@@ -94,5 +94,12 @@ class ContentViewModel: ObservableObject {
                 break
             }
         }
+        
+        if !gameEnded {
+            if (moves.first(where: {$0.isEmpty}) == nil) {
+                gameEnded = true
+                gameStatus = "tie!"
+            }
+        }
     }
 }

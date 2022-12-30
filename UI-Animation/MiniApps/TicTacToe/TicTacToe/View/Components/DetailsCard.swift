@@ -41,7 +41,7 @@ struct DetailsCard: View {
                 
                 Spacer()
                 
-                Button("Reset", action: vm.resetGame)
+                Button("Reset", action: vm.resetSession)
             }
         }
         .padding(10)

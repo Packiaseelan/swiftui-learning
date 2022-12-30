@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(vm.title)
+                .font(.largeTitle.weight(.semibold))
                 .alert(vm.gameStatus, isPresented: $vm.gameEnded) {
                     Button("Reset", role: .destructive, action: vm.resetGame )
                 }
@@ -31,6 +32,8 @@ struct ContentView: View {
             Spacer()
             
             Button("Reset", action: vm.resetGame)
+            
+            Spacer()
         }
     }
 }
