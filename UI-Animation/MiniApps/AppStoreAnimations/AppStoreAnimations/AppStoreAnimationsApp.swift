@@ -2,7 +2,7 @@
 //  AppStoreAnimationsApp.swift
 //  AppStoreAnimations
 //
-//  Created by Packiaseelan S on 29/11/22.
+//  Created by Packiaseelan S on 10/12/22.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct AppStoreAnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            AppStoreHomeView()
+            HomeView()
         }
     }
 }

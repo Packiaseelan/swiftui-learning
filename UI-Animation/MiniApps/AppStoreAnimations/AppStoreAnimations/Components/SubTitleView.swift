@@ -13,7 +13,7 @@ struct SubTitleView: View {
     
     var body: some View {
         Text(title)
-            .font(.title)
+            .font(.title2)
             .fontWeight(.bold)
             .padding(.leading)
     }
