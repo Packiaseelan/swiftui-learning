@@ -13,6 +13,8 @@ struct TodayItemView: View {
     
     @EnvironmentObject var today: TodayViewModel
     
+    @State private var isPressed: Bool = false
+    
     var body: some View {
         GeometryReader { geo -> AnyView in
             AnyView(
@@ -22,16 +24,22 @@ struct TodayItemView: View {
                 }
                     .cornerRadius(15)
                     .foregroundColor(.white)
-                    .onTapGesture {
-                        onItemSelect(geo: geo)
-                    }
+                    .scaleEffect(isPressed ? 0.95: 1)
+                    .simultaneousGesture(
+                        TapGesture()
+                            .onEnded({ _ in
+                                onPressed(isPressed: true)
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                                    onPressed(isPressed: false, geo: geo)
+                                })
+                            })
+                    )
             )
         }
         .background(Color.clear.opacity(0.4))
         .frame(height: today.itemHeight)
         .padding(.horizontal, 20)
         .padding(.bottom, 20)
-        
     }
 }
 
@@ -78,7 +86,6 @@ extension TodayItemView {
 }
 
 extension TodayItemView {
-    
     private func onItemSelect(geo: GeometryProxy) {
         today.selectedItem = item
         let x = geo.frame(in: .global).minX
@@ -96,6 +103,16 @@ extension TodayItemView {
         let startPoint = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
         withAnimation(.spring(response: 0.55, dampingFraction: 1)) {
             today.showDetails(startPoint: startPoint)
+        }
+    }
+    
+    private func onPressed(isPressed: Bool, geo: GeometryProxy? = nil) {
+        withAnimation(.easeInOut) {
+            self.isPressed = isPressed
+            
+            if !isPressed {
+                onItemSelect(geo: geo!)
+            }
         }
     }
 }
