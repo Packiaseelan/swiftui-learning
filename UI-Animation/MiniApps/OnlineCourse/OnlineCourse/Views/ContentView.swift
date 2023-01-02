@@ -47,6 +47,16 @@ struct ContentView: View {
             
             personIcon
             
+            if show {
+                OnboardingView(show: $show)
+                    .background(.white)
+                    .mask(Mask())
+                    .shadow(color: .black.opacity(0.5), radius: 40, x: 0, y: 40)
+                    .ignoresSafeArea(.all, edges: .top)
+                    .offset(y: show ? -10 : 0)
+                    .zIndex(1)
+                    .transition(.move(edge: .top))
+            }
         }
     }
 }
