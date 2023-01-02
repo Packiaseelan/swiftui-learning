@@ -46,8 +46,8 @@ extension SideMenu {
                 .background(.white.opacity(0.2))
                 .mask(Circle())
             VStack(alignment: .leading, spacing: 2) {
-                Text("Meng To")
-                Text("UI Developer")
+                Text("Packiaseelan")
+                Text("Developer")
                     .font(.subheadline)
                     .opacity(0.7)
             }
