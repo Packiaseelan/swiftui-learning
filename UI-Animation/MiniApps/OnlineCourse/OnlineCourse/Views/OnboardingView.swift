@@ -23,6 +23,15 @@ struct OnboardingView: View {
             content
                 .offset(y: showModal ? -50 : 0)
             
+            if showModal {
+                SignInView(show: $showModal)
+                    .opacity(showModal ? 1 : 0)
+                    .offset(y: showModal ? 0 : 300)
+                    .overlay(closeDialogButton)
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+                    .zIndex(1)
+            }
+            
             closeButton
             
         }
@@ -107,12 +116,31 @@ extension OnboardingView {
         .padding(20)
         .offset(y: showModal ? -200 : 80)
     }
+    
+    private var closeDialogButton: some View {
+        Button(action: onCloseDialog) {
+            Image(systemName: "xmark")
+                .frame(width: 36, height: 36)
+                .foregroundColor(.black)
+                .background(.white)
+                .mask(Circle())
+                .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .offset(y: showModal ? 0 : 200)
+    }
 }
 
 extension OnboardingView {
     private func onClose() {
         withAnimation {
             show.toggle()
+        }
+    }
+    
+    private func onCloseDialog() {
+        withAnimation(.spring()) {
+            showModal.toggle()
         }
     }
     
