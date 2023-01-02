@@ -105,6 +105,34 @@ extension SignInView {
 
 extension SignInView {
     private func onLogin() {
+        isLoading = true
         
+        if !email.isEmpty {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
+                check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: showConfetti) 
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: closeDialog)
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Error")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
+        }
+    }
+    
+    private func showConfetti() {
+        confetti.triggerInput("Trigger explosion")
+        withAnimation {
+            isLoading = false
+        }
+    }
+    
+    private func closeDialog() {
+        withAnimation {
+            show.toggle()
+        }
     }
 }
