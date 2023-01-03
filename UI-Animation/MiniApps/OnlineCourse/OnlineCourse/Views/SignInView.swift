@@ -23,48 +23,18 @@ struct SignInView: View {
                 .customFont(.largeTitle)
             Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.")
                 .foregroundColor(.secondary)
-            VStack(alignment: .leading) {
-                Text("Email")
-                    .customFont(.subheadline)
-                    .foregroundColor(.secondary)
-                TextField("", text: $email)
-                    .customTextField(image: Image("Icon Email"))
-            }
-            VStack(alignment: .leading) {
-                Text("Password")
-                    .customFont(.subheadline)
-                    .foregroundColor(.secondary)
-                SecureField("", text: $password)
-                    .customTextField(image: Image("Icon Lock"))
-            }
-            Button {
-                onLogin()
-            } label: {
-                HStack {
-                    Image(systemName: "arrow.right")
-                    Text("Sign in")
-                        .customFont(.headline)
-                }
-                .largeButton()
-            }
             
-            HStack {
-                Rectangle().frame(height: 1).opacity(0.1)
-                Text("OR").customFont(.subheadline2).foregroundColor(.black.opacity(0.3))
-                Rectangle().frame(height: 1).opacity(0.1)
-            }
+            emailField
+            passwordField
+            loginButton
+            
+            orDivider
             
             Text("Sign up with Email, Apple, Google")
                 .customFont(.subheadline)
                 .foregroundColor(.secondary)
             
-            HStack {
-                Image("Logo Email")
-                Spacer()
-                Image("Logo Apple")
-                Spacer()
-                Image("Logo Google")
-            }
+            socialLogins
         }
         .padding(30)
         .background(.regularMaterial)
@@ -100,6 +70,55 @@ extension SignInView {
     private var background: some View {
         RoundedRectangle(cornerRadius: 20, style: .continuous)
             .stroke(.linearGradient(colors: [.white.opacity(0.8), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing))
+    }
+    
+    private var emailField: some View {
+        VStack(alignment: .leading) {
+            Text("Email")
+                .customFont(.subheadline)
+                .foregroundColor(.secondary)
+            TextField("", text: $email)
+                .customTextField(image: Image("Icon Email"))
+        }
+    }
+    
+    private var passwordField: some View {
+        VStack(alignment: .leading) {
+            Text("Password")
+                .customFont(.subheadline)
+                .foregroundColor(.secondary)
+            SecureField("", text: $password)
+                .customTextField(image: Image("Icon Lock"))
+        }
+    }
+    
+    private var loginButton: some View {
+        Button(action: onLogin) {
+            HStack {
+                Image(systemName: "arrow.right")
+                Text("Sign in")
+                    .customFont(.headline)
+            }
+            .largeButton()
+        }
+    }
+    
+    private var orDivider: some View {
+        HStack {
+            Rectangle().frame(height: 1).opacity(0.1)
+            Text("OR").customFont(.subheadline2).foregroundColor(.black.opacity(0.3))
+            Rectangle().frame(height: 1).opacity(0.1)
+        }
+    }
+    
+    private var socialLogins: some View {
+        HStack {
+            Image("Logo Email")
+            Spacer()
+            Image("Logo Apple")
+            Spacer()
+            Image("Logo Google")
+        }
     }
 }
 
