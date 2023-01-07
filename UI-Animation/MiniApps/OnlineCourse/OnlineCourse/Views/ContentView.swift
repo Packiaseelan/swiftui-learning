@@ -25,13 +25,7 @@ struct ContentView: View {
                 .rotation3DEffect(.degrees(isOpen ? 0 : 30), axis: (x: 0, y: 1, z: 0))
                 .ignoresSafeArea(.all, edges: .top)
             
-            HomeView()
-                .safeAreaInset(edge: .bottom) {
-                    Color.clear.frame(height: 80)
-                }
-                .safeAreaInset(edge: .top) {
-                    Color.clear.frame(height: 124)
-                }
+            LandingView()
                 .mask(Mask())
                 .rotation3DEffect(.degrees(isOpen ? 30 : 0), axis: (x: 0, y: -1, z: 0), perspective: 1)
                 .offset(x: isOpen ? 265 : 0)
